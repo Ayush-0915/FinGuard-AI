@@ -1,10 +1,11 @@
-# MuleGuard backend API only. The PySide6 desktop UI runs on the analyst's computer.
+# FinGuard AI backend API only. The PySide6 desktop UI runs on the analyst's computer.
 FROM python:3.12-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
-    MULEGUARD_REPORTS_DIR=/var/lib/muleguard/reports
+    FINGUARD_REPORTS_DIR=/var/lib/finguard-ai/reports \
+    MULEGUARD_REPORTS_DIR=/var/lib/finguard-ai/reports
 
 WORKDIR /app
 
@@ -23,11 +24,11 @@ RUN sed -E '/^(matplotlib|seaborn|jupyter|pyside6)(==.*)?$/d' requirements.txt >
 COPY backend ./backend
 COPY models ./models
 
-RUN useradd --create-home --uid 10001 muleguard \
-    && mkdir -p /var/lib/muleguard/reports \
-    && chown -R muleguard:muleguard /app /var/lib/muleguard
+RUN useradd --create-home --uid 10001 finguard \
+    && mkdir -p /var/lib/finguard-ai/reports \
+    && chown -R finguard:finguard /app /var/lib/finguard-ai
 
-USER muleguard
+USER finguard
 
 EXPOSE 8000
 

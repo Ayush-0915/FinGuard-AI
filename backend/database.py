@@ -19,7 +19,7 @@ SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
 if not SUPABASE_URL or not SUPABASE_KEY:
     raise RuntimeError(
         "CRITICAL DATABASE ERROR: SUPABASE_URL and SUPABASE_KEY environment variables are missing! "
-        "MuleGuard requires a valid Supabase database setup. Mock fallbacks are disabled."
+        "FinGuard AI requires a valid Supabase database setup. Mock fallbacks are disabled."
     )
 
 # Create Supabase Client

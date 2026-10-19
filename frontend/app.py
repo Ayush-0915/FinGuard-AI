@@ -300,7 +300,7 @@ class AnalyticsWebSocketThread(QThread):
 class ApiClient:
     def __init__(self, base_url=None):
         if base_url is None:
-            base_url = os.getenv("MULEGUARD_API_URL")
+            base_url = os.getenv("FINGUARD_API_URL") or os.getenv("MULEGUARD_API_URL")
         if base_url is None:
             try:
                 if os.path.exists("config.json"):
@@ -654,7 +654,7 @@ class ApiClient:
             body_style = ParagraphStyle('B', fontSize=9, textColor=colors.HexColor(COLOR_TEXT_PRIMARY), fontName="Helvetica")
             bold_style = ParagraphStyle('Bld', fontSize=9, textColor=colors.HexColor(COLOR_TEXT_PRIMARY), fontName="Helvetica-Bold")
             
-            story.append(Paragraph("MULEGUARD - FINANCIAL CRIME OFFLINE REPORT", title_style))
+            story.append(Paragraph("FINGUARD AI - FINANCIAL CRIME OFFLINE REPORT", title_style))
             story.append(Paragraph(f"Account ID: {acc['account_id']} | Holder: {acc['holder_name']}", section_style))
             
             table_data = [
@@ -1089,7 +1089,7 @@ class LoginView(QWidget):
         logo_text_v.setContentsMargins(0, 0, 0, 0)
         logo_text_v.setSpacing(0)
         
-        lbl_appname = QLabel("MuleGuard")
+        lbl_appname = QLabel("FinGuard AI")
         lbl_appname.setStyleSheet("color: #FFFFFF; font-size: 22px; font-weight: bold; font-family: 'Inter'; padding: 0px;")
         lbl_appdesc = QLabel("Financial Crime Intelligence")
         lbl_appdesc.setStyleSheet("color: #98A2B3; font-size: 11px; padding: 0px;")
@@ -1120,7 +1120,7 @@ class LoginView(QWidget):
         
         # Headline Subtext
         lbl_subtext = QLabel(
-            "MuleGuard helps financial institutions identify mule accounts, detect suspicious "
+            "FinGuard AI helps financial institutions identify mule accounts, detect suspicious "
             "transactions, and prevent fraudulent activities with advanced network intelligence."
         )
         lbl_subtext.setWordWrap(True)
@@ -1369,10 +1369,10 @@ class LoginView(QWidget):
         # Footer
         footer_v = QVBoxLayout()
         footer_v.setSpacing(2)
-        lbl_f1 = QLabel("Secure Analyst Portal | MuleGuard v1.0.0")
+        lbl_f1 = QLabel("Secure Analyst Portal | FinGuard AI v1.0.0")
         lbl_f1.setStyleSheet("color: #667085; font-size: 11px;")
         lbl_f1.setAlignment(Qt.AlignCenter)
-        lbl_f2 = QLabel("© 2026 MuleGuard. All rights reserved.")
+        lbl_f2 = QLabel("© 2026 FinGuard AI. All rights reserved.")
         lbl_f2.setStyleSheet("color: #98A2B3; font-size: 11px;")
         lbl_f2.setAlignment(Qt.AlignCenter)
         footer_v.addWidget(lbl_f1)
@@ -1451,7 +1451,7 @@ class MainWindow(QMainWindow):
         self.api = api_client
         self.current_user = "Analyst"
         
-        self.setWindowTitle("MuleGuard")
+        self.setWindowTitle("FinGuard AI")
         logo_path = os.path.join(os.path.dirname(__file__), "logo.png")
         self.setWindowIcon(QIcon(logo_path))
         self.setMinimumSize(1280, 720)
@@ -1519,7 +1519,7 @@ class MainWindow(QMainWindow):
             logo_label.setText("🛡️")
             logo_label.setStyleSheet("font-size: 24px;")
             
-        title = QLabel("MuleGuard")
+        title = QLabel("FinGuard AI")
         title.setObjectName("SidebarTitle")
         title.setStyleSheet("font-size: 18px; font-weight: bold; color: #172B4D; padding: 0px;")
         
@@ -1717,7 +1717,7 @@ class MainWindow(QMainWindow):
             self.status_labels[state] = lbl
             
         layout.addStretch()
-        lbl_ver = QLabel("MuleGuard Desktop Terminal v1.0.0 (Secure Mode)")
+        lbl_ver = QLabel("FinGuard AI Desktop Terminal v1.0.0 (Secure Mode)")
         lbl_ver.setStyleSheet(f"color: {COLOR_TEXT_MUTED}; font-size: 11px;")
         layout.addWidget(lbl_ver)
         
@@ -1766,7 +1766,7 @@ class MainWindow(QMainWindow):
             6: "ANALYTICS", 7: "ANALYTICS", 8: "ANALYTICS",
             9: "SYSTEM SETTINGS"
         }
-        self.lbl_breadcrumbs.setText(categories.get(index, "MULEGUARD"))
+        self.lbl_breadcrumbs.setText(categories.get(index, "FINGUARD AI"))
         
         # Expand sidebar group if active page is switched programmatically
         active_category = categories.get(index)
@@ -2926,7 +2926,7 @@ class NetworkAnalysisView(QWidget):
         exp_frame.setStyleSheet("background-color: #F8F9FC; border: 1px solid #E4E7EC; border-radius: 6px; padding: 15px;")
         exp_layout = QVBoxLayout(exp_frame)
         
-        lbl_title = QLabel("🧠 MULEGUARD REASONING EXPLANABILITY REPORT")
+        lbl_title = QLabel("🧠 FINGUARD AI REASONING EXPLANABILITY REPORT")
         lbl_title.setStyleSheet("font-weight: bold; font-size: 12px; color: #172B4D;")
         exp_layout.addWidget(lbl_title)
         
@@ -3230,7 +3230,7 @@ class NetworkAnalysisView(QWidget):
     def load_case_report(self, acc):
         exp = self.api.get_explanation(self.account_id)
         summary = (
-            f"MULEGUARD AI COMPLIANCE AUDIT AUDIT DRAFT\n"
+            f"FINGUARD AI COMPLIANCE AUDIT DRAFT\n"
             f"================================================\n\n"
             f"Target Account: {acc['account_id']} | Holder: {acc['holder_name']}\n"
             f"Overall Risk Score: {acc['risk_score']} / 100 ({acc['risk_level']})\n"
@@ -3249,7 +3249,7 @@ class NetworkAnalysisView(QWidget):
         self.lbl_report_preview.setText(summary)
         
     def handle_export_pdf(self):
-        report_dir = "/Users/afsarazam/Desktop/MuleGuard/reports"
+        report_dir = os.getenv("FINGUARD_REPORTS_DIR") or os.getenv("MULEGUARD_REPORTS_DIR") or os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "reports")
         os.makedirs(report_dir, exist_ok=True)
         pdf_path = f"{report_dir}/Investigation_Report_{self.account_id}.pdf"
         
@@ -4946,7 +4946,7 @@ class SettingsView(QWidget):
         self.lbl_dataset = QLabel("Dataset Profile: 12,450 accounts in active tracking registry")
         self.lbl_api = QLabel("API Server: http://127.0.0.1:8000")
         self.lbl_db = QLabel("Database Connection: Supabase Connected (Sandbox mode overrides active)")
-        self.lbl_ver = QLabel("Application Engine Version: MuleGuard Desktop 1.0.0 Stable")
+        self.lbl_ver = QLabel("Application Engine Version: FinGuard AI Desktop 1.0.0 Stable")
         
         for lbl in [self.lbl_profile, self.lbl_sec, self.lbl_model, self.lbl_dataset, self.lbl_api, self.lbl_db, self.lbl_ver]:
             lbl.setStyleSheet(f"font-size: 13px; color: {COLOR_TEXT_PRIMARY}; border-bottom: 1px solid {COLOR_BORDER}; padding-bottom: 8px; padding-top: 4px;")

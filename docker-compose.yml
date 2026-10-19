@@ -1,18 +1,18 @@
 services:
-  muleguard-api:
+  finguard-api:
     build:
       context: .
       dockerfile: Dockerfile
-    image: muleguard-api:local
-    container_name: muleguard-api
+    image: finguard-api:local
+    container_name: finguard-api
     restart: unless-stopped
     init: true
     env_file:
       - .env
     ports:
-      - "${MULEGUARD_PORT:-8000}:8000"
+      - "${FINGUARD_PORT:-${MULEGUARD_PORT:-8000}}:8000"
     volumes:
-      - muleguard_reports:/var/lib/muleguard/reports
+      - finguard_reports:/var/lib/finguard-ai/reports
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
       interval: 30s
@@ -21,4 +21,4 @@ services:
       retries: 3
 
 volumes:
-  muleguard_reports:
+  finguard_reports:

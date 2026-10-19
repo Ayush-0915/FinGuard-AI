@@ -88,7 +88,7 @@ from reportlab.lib import colors
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 
-app = FastAPI(title="MuleGuard API", version="1.0.0")
+app = FastAPI(title="FinGuard AI API", description="AI-Powered Financial Crime Detection and Risk Intelligence", version="1.0.0")
 
 # ---------------------------------------------------------
 # MOCK DATA GENERATION ENGINE
@@ -871,7 +871,7 @@ def post_investigation_report(req: ReportRequest):
     explanation = get_explanation(account_id)
     
     # Directory to save reports temporarily
-    report_dir = "/Users/afsarazam/Desktop/MuleGuard/reports"
+    report_dir = os.getenv("FINGUARD_REPORTS_DIR") or os.getenv("MULEGUARD_REPORTS_DIR") or os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "reports")
     os.makedirs(report_dir, exist_ok=True)
     pdf_filename = f"{report_dir}/Investigation_Report_{account_id}.pdf"
     
@@ -916,7 +916,7 @@ def post_investigation_report(req: ReportRequest):
     )
     
     # Header Section
-    story.append(Paragraph("🛡️ MULEGUARD - FINANCIAL CRIME INTELLIGENCE REPORT", title_style))
+    story.append(Paragraph("🛡️ FINGUARD AI - FINANCIAL CRIME INTELLIGENCE REPORT", title_style))
     story.append(Paragraph(f"Generated on: {datetime.now().strftime('%d %b %Y, %H:%M:%S')} | Platform Version 1.0.0", styles['Italic']))
     story.append(Spacer(1, 10))
     
@@ -1015,7 +1015,7 @@ def post_investigation_report(req: ReportRequest):
     
     # Footer Notice
     story.append(Spacer(1, 20))
-    story.append(Paragraph("CONFIDENTIAL NOTICE: This document contains restricted intelligence prepared by the MuleGuard Risk Core. For internal compliance and law enforcement review only. Unauthorised duplication is strictly prohibited.", ParagraphStyle('FStyle', parent=styles['Italic'], fontSize=8, textColor=colors.HexColor(COLOR_SLATE))))
+    story.append(Paragraph("CONFIDENTIAL NOTICE: This document contains restricted intelligence prepared by the FinGuard AI Risk Core. For internal compliance and law enforcement review only. Unauthorised duplication is strictly prohibited.", ParagraphStyle('FStyle', parent=styles['Italic'], fontSize=8, textColor=colors.HexColor(COLOR_SLATE))))
     
     doc.build(story)
     

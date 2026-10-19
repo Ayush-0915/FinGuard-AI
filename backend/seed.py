@@ -1,8 +1,8 @@
 """
-MuleGuard Supabase Seeding and Migration Tool
+FinGuard AI Supabase Seeding and Migration Tool
 
 This script assists in setting up the Supabase PostgreSQL database tables and 
-seeding them with the synthetic mock data required for MuleGuard.
+seeding them with the synthetic mock data required for FinGuard AI.
 
 INSTRUCTIONS:
 1. Copy the SQL DDL block below and execute it in your Supabase Project "SQL Editor".
