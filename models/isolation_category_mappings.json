@@ -1,0 +1,45 @@
+{
+    "receiving_currency": {
+        "US Dollar": 0,
+        "Euro": 1,
+        "Yuan": 2,
+        "Canadian Dollar": 3,
+        "UK Pound": 4,
+        "Ruble": 5,
+        "Yen": 6,
+        "Brazil Real": 7,
+        "Shekel": 8,
+        "Australian Dollar": 9,
+        "Mexican Peso": 10,
+        "Swiss Franc": 11,
+        "Rupee": 12,
+        "Saudi Riyal": 13,
+        "Bitcoin": 14
+    },
+    "payment_currency": {
+        "US Dollar": 0,
+        "Euro": 1,
+        "Yuan": 2,
+        "Canadian Dollar": 3,
+        "UK Pound": 4,
+        "Ruble": 5,
+        "Yen": 6,
+        "Brazil Real": 7,
+        "Shekel": 8,
+        "Australian Dollar": 9,
+        "Mexican Peso": 10,
+        "Rupee": 11,
+        "Swiss Franc": 12,
+        "Saudi Riyal": 13,
+        "Bitcoin": 14
+    },
+    "payment_format": {
+        "Cheque": 0,
+        "Reinvestment": 1,
+        "Credit Card": 2,
+        "ACH": 3,
+        "Wire": 4,
+        "Cash": 5,
+        "Bitcoin": 6
+    }
+}

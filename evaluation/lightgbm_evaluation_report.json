@@ -1,0 +1,35 @@
+{
+    "model": "LightGBM",
+    "test_samples": 208325,
+    "features": 26,
+    "threshold": 0.5,
+    "confusion_matrix": {
+        "TN": 194985,
+        "FP": 12898,
+        "FN": 91,
+        "TP": 351
+    },
+    "metrics": {
+        "Accuracy": 0.9376503060122405,
+        "Precision": 0.026492565476639748,
+        "Recall / Sensitivity": 0.7941176470588235,
+        "F1 Score": 0.05127455992988094,
+        "Specificity": 0.9379554845754583,
+        "Balanced Accuracy": 0.866036565817141,
+        "ROC-AUC": 0.871791907922101,
+        "PR-AUC / Average Precision": 0.026299163283436545,
+        "Matthews Correlation Coefficient": 0.13803258435330173,
+        "Cohen's Kappa": 0.04736267204860234,
+        "Log Loss": 1.9010384918449377,
+        "Brier Score": 0.06065155234640021,
+        "False Positive Rate": 0.06204451542454169,
+        "False Negative Rate": 0.20588235294117646
+    },
+    "best_threshold": {
+        "threshold": 0.95,
+        "precision": 0.028808273145108337,
+        "recall": 0.7941176470588235,
+        "f1": 0.055599556470774594,
+        "specificity": 0.9430785586122964
+    }
+}

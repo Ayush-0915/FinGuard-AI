@@ -1,0 +1,11 @@
+{
+    "model": "IsolationForest",
+    "n_estimators": 300,
+    "max_samples": 256,
+    "contamination": "auto",
+    "random_state": 42,
+    "training_sample_size": 300000,
+    "training_data": "normal_transactions_only",
+    "validation_pr_auc": 0.001276068476627961,
+    "validation_roc_auc": 0.6280118629503018
+}
