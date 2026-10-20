@@ -1,0 +1,113 @@
+{
+  "model": "Experimental_LightGBM_LeakageFree",
+  "best_iteration": 4,
+  "num_features": 26,
+  "scale_pos_weight": 1231.795507102742,
+  "train_duration_seconds": 14.28,
+  "feature_importances": {
+    "from_bank": {
+      "split": 7,
+      "gain": 106089142060.0
+    },
+    "to_bank": {
+      "split": 3,
+      "gain": 379690424.0
+    },
+    "amount_received": {
+      "split": 11,
+      "gain": 3369941315.0
+    },
+    "receiving_currency": {
+      "split": 0,
+      "gain": 0.0
+    },
+    "amount_paid": {
+      "split": 39,
+      "gain": 224680417535.0
+    },
+    "payment_currency": {
+      "split": 2,
+      "gain": 102020009.0
+    },
+    "payment_format": {
+      "split": 3,
+      "gain": 3226427640.0
+    },
+    "hour": {
+      "split": 13,
+      "gain": 4337414748.0
+    },
+    "day_of_week": {
+      "split": 5,
+      "gain": 3174037597.0
+    },
+    "amount_diff": {
+      "split": 0,
+      "gain": 0.0
+    },
+    "amount_ratio": {
+      "split": 7,
+      "gain": 50734909.0
+    },
+    "currency_match": {
+      "split": 8,
+      "gain": 1678573590964.0
+    },
+    "same_bank": {
+      "split": 5,
+      "gain": 962792913.0
+    },
+    "sender_transaction_count": {
+      "split": 16,
+      "gain": 52835073215.0
+    },
+    "sender_total_amount": {
+      "split": 5,
+      "gain": 9229694113.0
+    },
+    "sender_avg_amount": {
+      "split": 13,
+      "gain": 27210337606.0
+    },
+    "sender_max_amount": {
+      "split": 3,
+      "gain": 236313094.0
+    },
+    "sender_unique_receivers": {
+      "split": 13,
+      "gain": 24834087070.0
+    },
+    "sender_unique_banks": {
+      "split": 4,
+      "gain": 967279608.0
+    },
+    "receiver_transaction_count": {
+      "split": 15,
+      "gain": 25791734128.0
+    },
+    "receiver_total_amount": {
+      "split": 10,
+      "gain": 1104352152.0
+    },
+    "receiver_avg_amount": {
+      "split": 11,
+      "gain": 2417206783.0
+    },
+    "receiver_max_amount": {
+      "split": 16,
+      "gain": 10068578327.0
+    },
+    "receiver_unique_senders": {
+      "split": 9,
+      "gain": 166389151664.0
+    },
+    "receiver_unique_banks": {
+      "split": 10,
+      "gain": 27171858288.0
+    },
+    "seconds_since_previous": {
+      "split": 20,
+      "gain": 28560673335.0
+    }
+  }
+}

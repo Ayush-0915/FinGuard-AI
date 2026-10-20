@@ -1,0 +1,527 @@
+{
+  "audit_a_artifacts": {
+    "inventory": {
+      "dataset": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/data/aml_dataset/HI-Small_Trans.csv",
+        "exists": true,
+        "size_bytes": 475664283,
+        "modified": "2025-07-08 15:40:20",
+        "sha256": "b19d39f515523373f991b689c07e11e7b0b95c17a2c27a87d91584ae16c5b040"
+      },
+      "feature_engine": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/feature_engine.py",
+        "exists": true,
+        "size_bytes": 13247,
+        "modified": "2026-10-20 13:48:19",
+        "sha256": "e8c9bd371b2aac922c754e6ddb63a1e1c86d99ce851efd17d6b19992da9c7dab"
+      },
+      "test_feature_pipeline": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/test_feature_pipeline.py",
+        "exists": true,
+        "size_bytes": 12274,
+        "modified": "2026-10-20 13:49:46",
+        "sha256": "9c1179d7295f5affa98f23a6ea3fe506e8265cd043a96bf546d1bda7433f1230"
+      },
+      "run_phase2_evaluation": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/run_phase2_evaluation.py",
+        "exists": true,
+        "size_bytes": 17722,
+        "modified": "2026-10-20 13:50:36",
+        "sha256": "dc0ba035feedff092a04d4bb5a25b6aae69b94ed9b3960a3db5d118d4a92ee7a"
+      },
+      "phase2_results": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/phase2_results.json",
+        "exists": true,
+        "size_bytes": 9681,
+        "modified": "2026-10-20 13:51:54",
+        "sha256": "b6c0e91582217b63128c79361340e3dfc7bf3610ff453b667f1794a03bb94171"
+      },
+      "phase2_report": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/PHASE2_REPORT.md",
+        "exists": true,
+        "size_bytes": 23250,
+        "modified": "2026-10-20 13:53:18",
+        "sha256": "898a78440f0ca0f0b704e36b101986f1d68da6ec25fc1f446a48d5ba820385ec"
+      },
+      "preflight_report": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/PREFLIGHT_REPORT.md",
+        "exists": true,
+        "size_bytes": 30872,
+        "modified": "2026-10-20 13:35:23",
+        "sha256": "486124b7135413f649bf99d6efb6eb5b5cee08404255c224be21fb7c5f9c7947"
+      },
+      "preflight_results": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/preflight_results.json",
+        "exists": true,
+        "size_bytes": 11577,
+        "modified": "2026-10-20 13:32:07",
+        "sha256": "cf54d606aab9079c7811bd29b0a433e161e3d7632fd793c643e3667b2cbd98ad"
+      },
+      "prod_model_pkl": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/models/muleguard_lightgbm.pkl",
+        "exists": true,
+        "size_bytes": 1669706,
+        "modified": "2026-10-19 19:09:47",
+        "sha256": "02c5f122e1ee729bd97bb08e8d004dae1b4b919416384c4d5c214598af702fa2"
+      },
+      "prod_model_txt": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/models/muleguard_lightgbm.txt",
+        "exists": true,
+        "size_bytes": 1672132,
+        "modified": "2026-10-19 19:09:47",
+        "sha256": "2bf774a5d4ca4716759fd5d3303db5926ab05b02770b5f52e596910504c9e121"
+      },
+      "prod_encoders": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/models/category_encoders.pkl",
+        "exists": true,
+        "size_bytes": 573,
+        "modified": "2026-10-19 19:09:46",
+        "sha256": "ff5d855fe24e3fddac6a136be0d8ed048e0b413486c9733b7bd5addcdc65839a"
+      },
+      "prod_feature_cols": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/models/feature_columns.json",
+        "exists": true,
+        "size_bytes": 658,
+        "modified": "2026-10-19 19:09:46",
+        "sha256": "2aff95d9e42d389df853185d89ab0ed7384d4480f4905829a48093bc2ed768e8"
+      },
+      "prod_lightgbm_cfg": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/models/lightgbm_config.json",
+        "exists": true,
+        "size_bytes": 1059,
+        "modified": "2026-10-19 19:09:46",
+        "sha256": "6c2fe0206478e8ca759a2f521dd5256db6e943e1f636c4b6b823eee3bc32747d"
+      },
+      "exp_model_pkl": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/artifacts/experimental_lightgbm.pkl",
+        "exists": true,
+        "size_bytes": 33362,
+        "modified": "2026-10-20 13:51:49",
+        "sha256": "22d4b851b29e295eb114b298bfd70ef910a47dbdc1d9532e097dca4bf2087ace"
+      },
+      "exp_model_txt": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/artifacts/experimental_lightgbm.txt",
+        "exists": true,
+        "size_bytes": 32147,
+        "modified": "2026-10-20 13:51:49",
+        "sha256": "4ad110987276676790c42ee975e8d6b4ac5ec6af0b6ed23cb801aad9ae3b1d62"
+      },
+      "exp_config_json": {
+        "path": "C:/Users/ayush/Desktop/Private/MuleGuard/evaluation/amlsim_evaluation/artifacts/experimental_config.json",
+        "exists": true,
+        "size_bytes": 2350,
+        "modified": "2026-10-20 13:51:49",
+        "sha256": "fa785ca542fcae019e13e762a3a3e28ed79cabc80947e214d76bf35508348ff2"
+      }
+    },
+    "raw_prediction_files_saved_by_phase2": false,
+    "missing_prediction_files": [
+      "val_probs_zero_shot.npy",
+      "test_probs_zero_shot.npy",
+      "val_probs_exp.npy",
+      "test_probs_exp.npy"
+    ],
+    "status": "PASS_WITH_FINDINGS"
+  },
+  "audit_c_and_d": {
+    "arithmetic_checks": {
+      "feature_count": 26,
+      "ratio_epsilon": 1e-06,
+      "first_tx_sentinel": 999999.0,
+      "matches_notebook_epsilon": true,
+      "matches_notebook_sentinel": true
+    },
+    "future_history_invariance_test": {
+      "status": "PASS",
+      "base_rows": 10000,
+      "future_rows_added": 10000,
+      "max_absolute_diff": 0.0,
+      "mismatched_columns": []
+    }
+  },
+  "audit_b_metrics": {
+    "threshold_verification": {
+      "zero_shot_val_threshold_exact_match": true,
+      "experimental_val_threshold_exact_match": true
+    },
+    "recomputed_zero_shot_test": {
+      "threshold": 0.98,
+      "roc_auc": 0.29248702214008016,
+      "pr_auc": 0.002791959428733814,
+      "precision": 0.00337609723160027,
+      "recall": 0.016433853738701727,
+      "f1": 0.005601456378658451,
+      "accuracy": 0.980735214324471,
+      "specificity": 0.9839295775798009,
+      "false_positive_rate": 0.016070422420199085,
+      "mcc": 0.00016579072602094277,
+      "confusion_matrix": {
+        "tp": 20,
+        "fp": 5904,
+        "tn": 361479,
+        "fn": 1197
+      },
+      "total_samples": 368600,
+      "positive_samples": 1217,
+      "predicted_positives": 5924,
+      "prevalence_pct": 0.33016820401519265
+    },
+    "recomputed_experimental_test": {
+      "threshold": 0.97,
+      "roc_auc": 0.892463036505078,
+      "pr_auc": 0.02144679934587397,
+      "precision": 0.022025840585822184,
+      "recall": 0.9441248972884141,
+      "f1": 0.043047412097484215,
+      "accuracy": 0.8614080303852415,
+      "specificity": 0.8611340208991706,
+      "false_positive_rate": 0.13886597910082937,
+      "mcc": 0.13252719970611426,
+      "confusion_matrix": {
+        "tp": 1149,
+        "fp": 51017,
+        "tn": 316366,
+        "fn": 68
+      },
+      "total_samples": 368600,
+      "positive_samples": 1217,
+      "predicted_positives": 52166,
+      "prevalence_pct": 0.33016820401519265
+    },
+    "zero_shot_discrepancies": {},
+    "experimental_discrepancies": {},
+    "status": "PASS"
+  },
+  "audit_e_unseen_subsets": {
+    "1_sender_role_unseen": {
+      "rows": 1350,
+      "positives": 64,
+      "prevalence_pct": 4.7407407407407405,
+      "zero_shot_eval": {
+        "threshold": 0.98,
+        "roc_auc": 0.5200294031881804,
+        "pr_auc": 0.04942136592754329,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.9414814814814815,
+        "specificity": 0.9883359253499222,
+        "false_positive_rate": 0.01166407465007776,
+        "mcc": -0.02364691549522231,
+        "confusion_matrix": {
+          "tp": 0,
+          "fp": 15,
+          "tn": 1271,
+          "fn": 64
+        },
+        "total_samples": 1350,
+        "positive_samples": 64,
+        "predicted_positives": 15,
+        "prevalence_pct": 4.7407407407407405
+      },
+      "experimental_eval": {
+        "threshold": 0.97,
+        "roc_auc": 0.5559875583203733,
+        "pr_auc": 0.05306799336650083,
+        "precision": 0.052545155993431854,
+        "recall": 1.0,
+        "f1": 0.0998439937597504,
+        "accuracy": 0.1451851851851852,
+        "specificity": 0.1026438569206843,
+        "false_positive_rate": 0.8973561430793157,
+        "mcc": 0.07344002637298584,
+        "confusion_matrix": {
+          "tp": 64,
+          "fp": 1154,
+          "tn": 132,
+          "fn": 0
+        },
+        "total_samples": 1350,
+        "positive_samples": 64,
+        "predicted_positives": 1218,
+        "prevalence_pct": 4.7407407407407405
+      }
+    },
+    "2_receiver_role_unseen": {
+      "rows": 988,
+      "positives": 31,
+      "prevalence_pct": 3.137651821862348,
+      "zero_shot_eval": {
+        "threshold": 0.98,
+        "roc_auc": 0.5665048707317895,
+        "pr_auc": 0.03388786101015137,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.9635627530364372,
+        "specificity": 0.9947753396029259,
+        "false_positive_rate": 0.00522466039707419,
+        "mcc": -0.012836100870742875,
+        "confusion_matrix": {
+          "tp": 0,
+          "fp": 5,
+          "tn": 952,
+          "fn": 31
+        },
+        "total_samples": 988,
+        "positive_samples": 31,
+        "predicted_positives": 5,
+        "prevalence_pct": 3.137651821862348
+      },
+      "experimental_eval": {
+        "threshold": 0.97,
+        "roc_auc": 0.6024033437826541,
+        "pr_auc": 0.039141414141414144,
+        "precision": 0.03884711779448621,
+        "recall": 1.0,
+        "f1": 0.07478890229191798,
+        "accuracy": 0.2236842105263158,
+        "specificity": 0.19853709508881923,
+        "false_positive_rate": 0.8014629049111808,
+        "mcc": 0.08782137507173565,
+        "confusion_matrix": {
+          "tp": 31,
+          "fp": 767,
+          "tn": 190,
+          "fn": 0
+        },
+        "total_samples": 988,
+        "positive_samples": 31,
+        "predicted_positives": 798,
+        "prevalence_pct": 3.137651821862348
+      }
+    },
+    "3_either_role_unseen": {
+      "rows": 2252,
+      "positives": 93,
+      "prevalence_pct": 4.129662522202486,
+      "zero_shot_eval": {
+        "threshold": 0.98,
+        "roc_auc": 0.5219461419314996,
+        "pr_auc": 0.04089363944387801,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.9502664298401421,
+        "specificity": 0.9911996294580825,
+        "false_positive_rate": 0.008800370541917554,
+        "mcc": -0.01914465709765063,
+        "confusion_matrix": {
+          "tp": 0,
+          "fp": 19,
+          "tn": 2140,
+          "fn": 93
+        },
+        "total_samples": 2252,
+        "positive_samples": 93,
+        "predicted_positives": 19,
+        "prevalence_pct": 4.129662522202486
+      },
+      "experimental_eval": {
+        "threshold": 0.97,
+        "roc_auc": 0.5750347383047707,
+        "pr_auc": 0.04823651452282158,
+        "precision": 0.047790339157245634,
+        "recall": 1.0,
+        "f1": 0.09122118685630211,
+        "accuracy": 0.1771758436944938,
+        "specificity": 0.14173228346456693,
+        "false_positive_rate": 0.8582677165354331,
+        "mcc": 0.0823008742134768,
+        "confusion_matrix": {
+          "tp": 93,
+          "fp": 1853,
+          "tn": 306,
+          "fn": 0
+        },
+        "total_samples": 2252,
+        "positive_samples": 93,
+        "predicted_positives": 1946,
+        "prevalence_pct": 4.129662522202486
+      }
+    },
+    "4_sender_completely_unseen": {
+      "rows": 637,
+      "positives": 18,
+      "prevalence_pct": 2.8257456828885403,
+      "zero_shot_eval": {
+        "threshold": 0.98,
+        "roc_auc": 0.48914019027104655,
+        "pr_auc": 0.027222306803125346,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.9623233908948194,
+        "specificity": 0.9903069466882067,
+        "false_positive_rate": 0.009693053311793215,
+        "mcc": -0.016628454009476944,
+        "confusion_matrix": {
+          "tp": 0,
+          "fp": 6,
+          "tn": 613,
+          "fn": 18
+        },
+        "total_samples": 637,
+        "positive_samples": 18,
+        "predicted_positives": 6,
+        "prevalence_pct": 2.8257456828885403
+      },
+      "experimental_eval": {
+        "threshold": 0.97,
+        "roc_auc": 0.5646203554119548,
+        "pr_auc": 0.03231597845601436,
+        "precision": 0.031914893617021274,
+        "recall": 1.0,
+        "f1": 0.061855670103092786,
+        "accuracy": 0.14285714285714285,
+        "specificity": 0.11793214862681745,
+        "false_positive_rate": 0.8820678513731826,
+        "mcc": 0.06134975124197017,
+        "confusion_matrix": {
+          "tp": 18,
+          "fp": 546,
+          "tn": 73,
+          "fn": 0
+        },
+        "total_samples": 637,
+        "positive_samples": 18,
+        "predicted_positives": 564,
+        "prevalence_pct": 2.8257456828885403
+      }
+    },
+    "5_receiver_completely_unseen": {
+      "rows": 471,
+      "positives": 20,
+      "prevalence_pct": 4.246284501061571,
+      "zero_shot_eval": {
+        "threshold": 0.98,
+        "roc_auc": 0.5528824833702882,
+        "pr_auc": 0.04697359686822025,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.9532908704883227,
+        "specificity": 0.9955654101995566,
+        "false_positive_rate": 0.004434589800443459,
+        "mcc": -0.013751665610214573,
+        "confusion_matrix": {
+          "tp": 0,
+          "fp": 2,
+          "tn": 449,
+          "fn": 20
+        },
+        "total_samples": 471,
+        "positive_samples": 20,
+        "predicted_positives": 2,
+        "prevalence_pct": 4.246284501061571
+      },
+      "experimental_eval": {
+        "threshold": 0.97,
+        "roc_auc": 0.6108647450110865,
+        "pr_auc": 0.05390835579514825,
+        "precision": 0.05361930294906166,
+        "recall": 1.0,
+        "f1": 0.10178117048346055,
+        "accuracy": 0.2505307855626327,
+        "specificity": 0.21729490022172948,
+        "false_positive_rate": 0.7827050997782705,
+        "mcc": 0.10794072949667813,
+        "confusion_matrix": {
+          "tp": 20,
+          "fp": 353,
+          "tn": 98,
+          "fn": 0
+        },
+        "total_samples": 471,
+        "positive_samples": 20,
+        "predicted_positives": 373,
+        "prevalence_pct": 4.246284501061571
+      }
+    },
+    "6_both_completely_unseen": {
+      "rows": 47,
+      "positives": 0,
+      "prevalence_pct": 0.0,
+      "zero_shot_eval": null,
+      "experimental_eval": null
+    }
+  },
+  "audit_f_stopping": {
+    "verified_best_iteration": 4,
+    "best_iteration_matches_phase2": true,
+    "best_val_ap": 0.02377687531940499,
+    "val_ap_first_10_rounds": [
+      0.018305766804672222,
+      0.0007752953449861789,
+      0.0008272261667385654,
+      0.02377687531940499,
+      0.02307689742973777,
+      0.022364979932176923,
+      0.020469699196707672,
+      0.01949091279839318,
+      0.01807754252395758,
+      0.018317164481558023
+    ],
+    "early_stopping_mechanism_explanation": "LightGBM's early_stopping(stopping_rounds=50) tracked validation average precision. Round 4 achieved the absolute maximum validation AP of 0.023777. Over rounds 5-54 (50 consecutive rounds), validation AP fluctuated between 0.017 and 0.021, never exceeding Round 4's peak. Early stopping correctly halted training at Round 54 and restored the best model from Round 4."
+  },
+  "audit_g_operational": {
+    "financial_volume_analysis": {
+      "total_illicit_amount_paid": 2060170738.761849,
+      "total_illicit_amount_received": 2060170738.761849,
+      "zero_shot_intercepted_amount_paid": 91408057.83,
+      "zero_shot_volume_recovery_pct": 4.436916616189575,
+      "experimental_intercepted_amount_paid": 2053904086.0091972,
+      "experimental_volume_recovery_pct": 99.69581876711743
+    },
+    "top_k_ranking_analysis": {
+      "top_100": {
+        "alerts": 100,
+        "true_positives": 60,
+        "precision_pct": 60.0,
+        "recall_pct": 4.930156121610517
+      },
+      "top_500": {
+        "alerts": 500,
+        "true_positives": 293,
+        "precision_pct": 58.599999999999994,
+        "recall_pct": 24.075595727198028
+      },
+      "top_1000": {
+        "alerts": 1000,
+        "true_positives": 589,
+        "precision_pct": 58.9,
+        "recall_pct": 48.397699260476585
+      },
+      "top_2500": {
+        "alerts": 2500,
+        "true_positives": 624,
+        "precision_pct": 24.959999999999997,
+        "recall_pct": 51.27362366474938
+      },
+      "top_5000": {
+        "alerts": 5000,
+        "true_positives": 643,
+        "precision_pct": 12.86,
+        "recall_pct": 52.83483976992605
+      },
+      "top_10000": {
+        "alerts": 10000,
+        "true_positives": 680,
+        "precision_pct": 6.800000000000001,
+        "recall_pct": 55.87510271158587
+      },
+      "top_25000": {
+        "alerts": 25000,
+        "true_positives": 857,
+        "precision_pct": 3.428,
+        "recall_pct": 70.41906327033689
+      },
+      "top_50000": {
+        "alerts": 50000,
+        "true_positives": 1139,
+        "precision_pct": 2.278,
+        "recall_pct": 93.59079704190633
+      }
+    }
+  }
+}

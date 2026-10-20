@@ -1,0 +1,434 @@
+{
+  "inventory": [
+    {
+      "path": "data/aml_dataset/HI-Large_Patterns.txt",
+      "name": "HI-Large_Patterns.txt",
+      "size_bytes": 13807473,
+      "size_mb": 13.17,
+      "modified": "2025-07-08 15:22:20"
+    },
+    {
+      "path": "data/aml_dataset/HI-Large_Trans.csv",
+      "name": "HI-Large_Trans.csv",
+      "size_bytes": 17052760651,
+      "size_mb": 16262.78,
+      "modified": "2025-07-08 15:25:04"
+    },
+    {
+      "path": "data/aml_dataset/HI-Large_accounts.csv",
+      "name": "HI-Large_accounts.csv",
+      "size_bytes": 147691860,
+      "size_mb": 140.85,
+      "modified": "2025-07-08 15:37:44"
+    },
+    {
+      "path": "data/aml_dataset/HI-Medium_Patterns.txt",
+      "name": "HI-Medium_Patterns.txt",
+      "size_bytes": 2279574,
+      "size_mb": 2.17,
+      "modified": "2025-07-08 15:37:52"
+    },
+    {
+      "path": "data/aml_dataset/HI-Medium_Trans.csv",
+      "name": "HI-Medium_Trans.csv",
+      "size_bytes": 3031783420,
+      "size_mb": 2891.33,
+      "modified": "2025-07-08 15:37:52"
+    },
+    {
+      "path": "data/aml_dataset/HI-Medium_accounts.csv",
+      "name": "HI-Medium_accounts.csv",
+      "size_bytes": 145008642,
+      "size_mb": 138.29,
+      "modified": "2025-07-08 15:40:10"
+    },
+    {
+      "path": "data/aml_dataset/HI-Small_Patterns.txt",
+      "name": "HI-Small_Patterns.txt",
+      "size_bytes": 323844,
+      "size_mb": 0.31,
+      "modified": "2025-07-08 15:40:20"
+    },
+    {
+      "path": "data/aml_dataset/HI-Small_Trans.csv",
+      "name": "HI-Small_Trans.csv",
+      "size_bytes": 475664283,
+      "size_mb": 453.63,
+      "modified": "2025-07-08 15:40:20"
+    },
+    {
+      "path": "data/aml_dataset/HI-Small_accounts.csv",
+      "name": "HI-Small_accounts.csv",
+      "size_bytes": 34053187,
+      "size_mb": 32.48,
+      "modified": "2025-07-08 15:40:42"
+    },
+    {
+      "path": "data/aml_dataset/LI-Large_Patterns.txt",
+      "name": "LI-Large_Patterns.txt",
+      "size_bytes": 1934790,
+      "size_mb": 1.85,
+      "modified": "2025-07-08 15:40:44"
+    },
+    {
+      "path": "data/aml_dataset/LI-Large_Trans.csv",
+      "name": "LI-Large_Trans.csv",
+      "size_bytes": 16742513790,
+      "size_mb": 15966.91,
+      "modified": "2025-07-08 15:40:44"
+    },
+    {
+      "path": "data/aml_dataset/LI-Large_accounts.csv",
+      "name": "LI-Large_accounts.csv",
+      "size_bytes": 144349585,
+      "size_mb": 137.66,
+      "modified": "2025-07-08 15:53:36"
+    },
+    {
+      "path": "data/aml_dataset/LI-Medium_Patterns.txt",
+      "name": "LI-Medium_Patterns.txt",
+      "size_bytes": 390893,
+      "size_mb": 0.37,
+      "modified": "2025-07-08 15:53:44"
+    },
+    {
+      "path": "data/aml_dataset/LI-Medium_Trans.csv",
+      "name": "LI-Medium_Trans.csv",
+      "size_bytes": 2976436978,
+      "size_mb": 2838.55,
+      "modified": "2025-07-08 15:53:44"
+    },
+    {
+      "path": "data/aml_dataset/LI-Medium_accounts.csv",
+      "name": "LI-Medium_accounts.csv",
+      "size_bytes": 141781157,
+      "size_mb": 135.21,
+      "modified": "2025-07-08 15:56:00"
+    },
+    {
+      "path": "data/aml_dataset/LI-Small_Patterns.txt",
+      "name": "LI-Small_Patterns.txt",
+      "size_bytes": 99156,
+      "size_mb": 0.09,
+      "modified": "2025-07-08 15:56:08"
+    },
+    {
+      "path": "data/aml_dataset/LI-Small_Trans.csv",
+      "name": "LI-Small_Trans.csv",
+      "size_bytes": 650422357,
+      "size_mb": 620.29,
+      "modified": "2025-07-08 15:56:08"
+    },
+    {
+      "path": "data/aml_dataset/LI-Small_accounts.csv",
+      "name": "LI-Small_accounts.csv",
+      "size_bytes": 47248016,
+      "size_mb": 45.06,
+      "modified": "2025-07-08 15:56:40"
+    }
+  ],
+  "checksums": {
+    "HI-Small_Trans.csv": {
+      "md5": "9667f3a6323e6ad88e699acf42db9157",
+      "sha256": "b19d39f515523373f991b689c07e11e7b0b95c17a2c27a87d91584ae16c5b040",
+      "size_bytes": 475664283
+    },
+    "HI-Small_accounts.csv": {
+      "md5": "96f67c1d734441050fd2ba960bb5aeef",
+      "sha256": "786808526e33cfc441212dd6fccda7edfc24172149bed59c6ef59b186836b014",
+      "size_bytes": 34053187
+    },
+    "HI-Small_Patterns.txt": {
+      "md5": "0a26e1834ffb9c11de238f97059ff44b",
+      "sha256": "2c546b5ce6009e73851f0139af053cf845f08bf92f3bc82fe1eb937dec2ef39b",
+      "size_bytes": 323844
+    }
+  },
+  "production_contract": {
+    "num_features": 26,
+    "features": [
+      "from_bank",
+      "to_bank",
+      "amount_received",
+      "receiving_currency",
+      "amount_paid",
+      "payment_currency",
+      "payment_format",
+      "hour",
+      "day_of_week",
+      "amount_diff",
+      "amount_ratio",
+      "currency_match",
+      "same_bank",
+      "sender_transaction_count",
+      "sender_total_amount",
+      "sender_avg_amount",
+      "sender_max_amount",
+      "sender_unique_receivers",
+      "sender_unique_banks",
+      "receiver_transaction_count",
+      "receiver_total_amount",
+      "receiver_avg_amount",
+      "receiver_max_amount",
+      "receiver_unique_senders",
+      "receiver_unique_banks",
+      "seconds_since_previous"
+    ],
+    "encoders": {
+      "receiving_currency": [
+        "Australian Dollar",
+        "Bitcoin",
+        "Brazil Real",
+        "Canadian Dollar",
+        "Euro",
+        "Mexican Peso",
+        "Ruble",
+        "Rupee",
+        "Saudi Riyal",
+        "Shekel",
+        "Swiss Franc",
+        "UK Pound",
+        "US Dollar",
+        "Yen",
+        "Yuan"
+      ],
+      "payment_currency": [
+        "Australian Dollar",
+        "Bitcoin",
+        "Brazil Real",
+        "Canadian Dollar",
+        "Euro",
+        "Mexican Peso",
+        "Ruble",
+        "Rupee",
+        "Saudi Riyal",
+        "Shekel",
+        "Swiss Franc",
+        "UK Pound",
+        "US Dollar",
+        "Yen",
+        "Yuan"
+      ],
+      "payment_format": [
+        "ACH",
+        "Bitcoin",
+        "Cash",
+        "Cheque",
+        "Credit Card",
+        "Reinvestment",
+        "Wire"
+      ]
+    }
+  },
+  "profiling": {
+    "total_rows": 5078345,
+    "raw_columns": [
+      "Timestamp",
+      "From Bank",
+      "Account",
+      "To Bank",
+      "Account",
+      "Amount Received",
+      "Receiving Currency",
+      "Amount Paid",
+      "Payment Currency",
+      "Payment Format",
+      "Is Laundering"
+    ],
+    "pandas_columns": [
+      "Timestamp",
+      "From Bank",
+      "Account",
+      "To Bank",
+      "Account.1",
+      "Amount Received",
+      "Receiving Currency",
+      "Amount Paid",
+      "Payment Currency",
+      "Payment Format",
+      "Is Laundering"
+    ],
+    "null_counts": {
+      "Timestamp": 0,
+      "From Bank": 0,
+      "Account": 0,
+      "To Bank": 0,
+      "Account.1": 0,
+      "Amount Received": 0,
+      "Receiving Currency": 0,
+      "Amount Paid": 0,
+      "Payment Currency": 0,
+      "Payment Format": 0,
+      "Is Laundering": 0
+    },
+    "duplicates": {
+      "exact_transaction_duplicates": 9,
+      "key_pair_timestamp_duplicates": 100638
+    },
+    "timestamps": {
+      "min_timestamp": "2022/09/01 00:00",
+      "max_timestamp": "2022/09/18 16:18",
+      "unique_timestamps": 15018,
+      "collision_timestamps_count": 14792,
+      "max_transactions_per_timestamp": 11193,
+      "sample_collision_batch_sizes": {
+        "p50": 324.0,
+        "p90": 544.0,
+        "p99": 810.1800000000003,
+        "max": 11193
+      }
+    },
+    "target": {
+      "negative_count": 5073168,
+      "positive_count": 5177,
+      "negative_ratio_pct": 99.8981,
+      "positive_prevalence_pct": 0.1019,
+      "imbalance_ratio": "1:979.9",
+      "other_values": {}
+    },
+    "categoricals": {
+      "from_banks_count": 30528,
+      "to_banks_count": 15850,
+      "bank_overlap_count": 15850,
+      "receiving_currencies": [
+        "Australian Dollar",
+        "Bitcoin",
+        "Brazil Real",
+        "Canadian Dollar",
+        "Euro",
+        "Mexican Peso",
+        "Ruble",
+        "Rupee",
+        "Saudi Riyal",
+        "Shekel",
+        "Swiss Franc",
+        "UK Pound",
+        "US Dollar",
+        "Yen",
+        "Yuan"
+      ],
+      "payment_currencies": [
+        "Australian Dollar",
+        "Bitcoin",
+        "Brazil Real",
+        "Canadian Dollar",
+        "Euro",
+        "Mexican Peso",
+        "Ruble",
+        "Rupee",
+        "Saudi Riyal",
+        "Shekel",
+        "Swiss Franc",
+        "UK Pound",
+        "US Dollar",
+        "Yen",
+        "Yuan"
+      ],
+      "payment_formats": [
+        "ACH",
+        "Bitcoin",
+        "Cash",
+        "Cheque",
+        "Credit Card",
+        "Reinvestment",
+        "Wire"
+      ],
+      "encoder_compatibility": {
+        "unseen_receiving_currencies": [],
+        "unseen_payment_currencies": [],
+        "unseen_payment_formats": [],
+        "all_currencies_matched": true,
+        "all_formats_matched": true
+      }
+    },
+    "numericals": {
+      "amount_received": {
+        "min": 1e-06,
+        "max": 1046302363293.48,
+        "mean": 5988726.07,
+        "std": 1037183006.77,
+        "zeros": 0,
+        "negatives": 0
+      },
+      "amount_paid": {
+        "min": 1e-06,
+        "max": 1046302363293.48,
+        "mean": 4509273.37,
+        "std": 869772745.28,
+        "zeros": 0,
+        "negatives": 0
+      },
+      "currency_match_count": 5006175,
+      "currency_mismatch_count": 72170,
+      "currency_match_pct": 98.58
+    }
+  },
+  "splits": {
+    "definitions": {
+      "train": "Timestamp < 2022/09/08 00:00",
+      "val": "2022/09/08 00:00 <= Timestamp < 2022/09/09 18:00",
+      "test": "Timestamp >= 2022/09/09 18:00"
+    },
+    "partitions": {
+      "train": {
+        "rows": 3731672,
+        "pct": 73.48,
+        "pos": 3027,
+        "neg": 3728645,
+        "prevalence_pct": 0.0811,
+        "min_ts": "2022/09/01 00:00",
+        "max_ts": "2022/09/07 23:59",
+        "unique_accounts": 513504,
+        "laundering_accounts": 4064
+      },
+      "val": {
+        "rows": 978073,
+        "pct": 19.26,
+        "pos": 933,
+        "neg": 977140,
+        "prevalence_pct": 0.0954,
+        "min_ts": "2022/09/08 00:00",
+        "max_ts": "2022/09/09 17:59",
+        "unique_accounts": 324357,
+        "laundering_accounts": 1387
+      },
+      "test": {
+        "rows": 368600,
+        "pct": 7.26,
+        "pos": 1217,
+        "neg": 367383,
+        "prevalence_pct": 0.3302,
+        "min_ts": "2022/09/09 18:00",
+        "max_ts": "2022/09/18 16:18",
+        "unique_accounts": 212850,
+        "laundering_accounts": 1460
+      }
+    },
+    "verification": {
+      "sum_rows_matches_total": true,
+      "sum_pos_matches_total": true,
+      "test_positive_adequate": true
+    }
+  },
+  "entity_overlap": {
+    "total_unique_accounts": 515080,
+    "train_only_accounts": 153512,
+    "val_only_accounts": 873,
+    "test_only_accounts": 633,
+    "train_val_overlap": 323414,
+    "train_test_overlap": 212147,
+    "val_test_overlap": 175639,
+    "all_three_overlap": 175569,
+    "laundering_entities": {
+      "total_laundering_accounts": 6357,
+      "test_launderers_total": 1460,
+      "test_launderers_seen_in_train": 161,
+      "test_launderers_seen_in_val": 195,
+      "test_launderers_unseen": 1176
+    }
+  },
+  "audit_metadata": {
+    "elapsed_seconds": 16.34,
+    "audit_timestamp": "2026-10-20 13:32:07"
+  }
+}

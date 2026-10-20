@@ -1,0 +1,28 @@
+[
+  {
+    "run_id": "RUN-IBM-HI-SMALL-20261020-01",
+    "source_dataset": "HI-Small_Trans.csv",
+    "source_sha256": "b19d39f515523373f991b689c07e11e7b0b95c17a2c27a87d91584ae16c5b040",
+    "total_scanned_rows": 5078345,
+    "selected_records_count": 1000,
+    "model_version": "LightGBM-4.5.0-muleguard",
+    "pipeline_version": "1.0.0-hybrid",
+    "selection_policy": "Top-500 Alerts + 250 Graph Counterparties + 250 Baseline Samples",
+    "export_metadata": {
+      "pilot_cap": 1000,
+      "operating_threshold": 0.97,
+      "critical_threshold": 0.95,
+      "high_threshold": 0.7,
+      "medium_threshold": 0.4,
+      "reader_stats": {
+        "total_rows_scanned": 5078345,
+        "valid_rows_count": 5078345,
+        "invalid_rows_count": 0,
+        "duplicate_rows_count": 9,
+        "positive_labels_count": 5177,
+        "negative_labels_count": 5073168,
+        "prevalence_pct": 0.10194266045335636
+      }
+    }
+  }
+]

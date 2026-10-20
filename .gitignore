@@ -107,3 +107,11 @@ pip-selfcheck.json
 # OS files
 .DS_Store
 Thumbs.db
+
+# Dataset directory
+data/
+
+# Evaluation intermediate arrays and offline ground-truth quarantine
+*.npy
+evaluation/amlsim_evaluation/ibm_export/artifacts/evaluation_ground_truth.json
+reports/*.pdf

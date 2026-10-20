@@ -1,0 +1,976 @@
+{
+  "alert_prioritization_baseline": {
+    "full_test_budgets": {
+      "total_evaluated_transactions": 368600,
+      "total_positive_ground_truth": 1217,
+      "overall_prevalence_pct": 0.33016820401519265,
+      "budget_metrics": {
+        "top_100": {
+          "budget_k": 100,
+          "alerts_reviewed": 100,
+          "true_positives": 0,
+          "false_positives": 100,
+          "precision_at_k_pct": 0.0,
+          "recall_at_k_pct": 0.0,
+          "alerts_per_1000_tx": 0.27,
+          "tp_per_100_reviewed": 0.0
+        },
+        "top_500": {
+          "budget_k": 500,
+          "alerts_reviewed": 500,
+          "true_positives": 1,
+          "false_positives": 499,
+          "precision_at_k_pct": 0.2,
+          "recall_at_k_pct": 0.08,
+          "alerts_per_1000_tx": 1.36,
+          "tp_per_100_reviewed": 0.2
+        },
+        "top_1000": {
+          "budget_k": 1000,
+          "alerts_reviewed": 1000,
+          "true_positives": 7,
+          "false_positives": 993,
+          "precision_at_k_pct": 0.7,
+          "recall_at_k_pct": 0.58,
+          "alerts_per_1000_tx": 2.71,
+          "tp_per_100_reviewed": 0.7
+        },
+        "top_2500": {
+          "budget_k": 2500,
+          "alerts_reviewed": 2500,
+          "true_positives": 14,
+          "false_positives": 2486,
+          "precision_at_k_pct": 0.56,
+          "recall_at_k_pct": 1.15,
+          "alerts_per_1000_tx": 6.78,
+          "tp_per_100_reviewed": 0.56
+        },
+        "top_5000": {
+          "budget_k": 5000,
+          "alerts_reviewed": 5000,
+          "true_positives": 33,
+          "false_positives": 4967,
+          "precision_at_k_pct": 0.66,
+          "recall_at_k_pct": 2.71,
+          "alerts_per_1000_tx": 13.56,
+          "tp_per_100_reviewed": 0.66
+        }
+      },
+      "tier_distribution": {
+        "Low": 316242,
+        "Critical": 52166,
+        "High": 192
+      }
+    },
+    "unseen_subsets_budgets": {
+      "sender_role_unseen": {
+        "subset_rows": 1350,
+        "subset_positives": 64,
+        "metrics": {
+          "top_50": {
+            "budget_k": 50,
+            "alerts_reviewed": 50,
+            "true_positives": 1,
+            "false_positives": 49,
+            "precision_at_k_pct": 2.0,
+            "recall_at_k_pct": 1.56,
+            "alerts_per_1000_tx": 37.04,
+            "tp_per_100_reviewed": 2.0
+          },
+          "top_100": {
+            "budget_k": 100,
+            "alerts_reviewed": 100,
+            "true_positives": 1,
+            "false_positives": 99,
+            "precision_at_k_pct": 1.0,
+            "recall_at_k_pct": 1.56,
+            "alerts_per_1000_tx": 74.07,
+            "tp_per_100_reviewed": 1.0
+          },
+          "top_250": {
+            "budget_k": 250,
+            "alerts_reviewed": 250,
+            "true_positives": 8,
+            "false_positives": 242,
+            "precision_at_k_pct": 3.2,
+            "recall_at_k_pct": 12.5,
+            "alerts_per_1000_tx": 185.19,
+            "tp_per_100_reviewed": 3.2
+          },
+          "top_500": {
+            "budget_k": 500,
+            "alerts_reviewed": 500,
+            "true_positives": 12,
+            "false_positives": 488,
+            "precision_at_k_pct": 2.4,
+            "recall_at_k_pct": 18.75,
+            "alerts_per_1000_tx": 370.37,
+            "tp_per_100_reviewed": 2.4
+          }
+        }
+      },
+      "receiver_role_unseen": {
+        "subset_rows": 988,
+        "subset_positives": 31,
+        "metrics": {
+          "top_50": {
+            "budget_k": 50,
+            "alerts_reviewed": 50,
+            "true_positives": 0,
+            "false_positives": 50,
+            "precision_at_k_pct": 0.0,
+            "recall_at_k_pct": 0.0,
+            "alerts_per_1000_tx": 50.61,
+            "tp_per_100_reviewed": 0.0
+          },
+          "top_100": {
+            "budget_k": 100,
+            "alerts_reviewed": 100,
+            "true_positives": 1,
+            "false_positives": 99,
+            "precision_at_k_pct": 1.0,
+            "recall_at_k_pct": 3.23,
+            "alerts_per_1000_tx": 101.21,
+            "tp_per_100_reviewed": 1.0
+          },
+          "top_250": {
+            "budget_k": 250,
+            "alerts_reviewed": 250,
+            "true_positives": 5,
+            "false_positives": 245,
+            "precision_at_k_pct": 2.0,
+            "recall_at_k_pct": 16.13,
+            "alerts_per_1000_tx": 253.04,
+            "tp_per_100_reviewed": 2.0
+          },
+          "top_500": {
+            "budget_k": 500,
+            "alerts_reviewed": 500,
+            "true_positives": 10,
+            "false_positives": 490,
+            "precision_at_k_pct": 2.0,
+            "recall_at_k_pct": 32.26,
+            "alerts_per_1000_tx": 506.07,
+            "tp_per_100_reviewed": 2.0
+          }
+        }
+      },
+      "either_role_unseen": {
+        "subset_rows": 2252,
+        "subset_positives": 93,
+        "metrics": {
+          "top_50": {
+            "budget_k": 50,
+            "alerts_reviewed": 50,
+            "true_positives": 1,
+            "false_positives": 49,
+            "precision_at_k_pct": 2.0,
+            "recall_at_k_pct": 1.08,
+            "alerts_per_1000_tx": 22.2,
+            "tp_per_100_reviewed": 2.0
+          },
+          "top_100": {
+            "budget_k": 100,
+            "alerts_reviewed": 100,
+            "true_positives": 1,
+            "false_positives": 99,
+            "precision_at_k_pct": 1.0,
+            "recall_at_k_pct": 1.08,
+            "alerts_per_1000_tx": 44.4,
+            "tp_per_100_reviewed": 1.0
+          },
+          "top_250": {
+            "budget_k": 250,
+            "alerts_reviewed": 250,
+            "true_positives": 3,
+            "false_positives": 247,
+            "precision_at_k_pct": 1.2,
+            "recall_at_k_pct": 3.23,
+            "alerts_per_1000_tx": 111.01,
+            "tp_per_100_reviewed": 1.2
+          },
+          "top_500": {
+            "budget_k": 500,
+            "alerts_reviewed": 500,
+            "true_positives": 13,
+            "false_positives": 487,
+            "precision_at_k_pct": 2.6,
+            "recall_at_k_pct": 13.98,
+            "alerts_per_1000_tx": 222.02,
+            "tp_per_100_reviewed": 2.6
+          }
+        }
+      },
+      "sender_completely_unseen": {
+        "subset_rows": 637,
+        "subset_positives": 18,
+        "metrics": {
+          "top_50": {
+            "budget_k": 50,
+            "alerts_reviewed": 50,
+            "true_positives": 0,
+            "false_positives": 50,
+            "precision_at_k_pct": 0.0,
+            "recall_at_k_pct": 0.0,
+            "alerts_per_1000_tx": 78.49,
+            "tp_per_100_reviewed": 0.0
+          },
+          "top_100": {
+            "budget_k": 100,
+            "alerts_reviewed": 100,
+            "true_positives": 2,
+            "false_positives": 98,
+            "precision_at_k_pct": 2.0,
+            "recall_at_k_pct": 11.11,
+            "alerts_per_1000_tx": 156.99,
+            "tp_per_100_reviewed": 2.0
+          },
+          "top_250": {
+            "budget_k": 250,
+            "alerts_reviewed": 250,
+            "true_positives": 4,
+            "false_positives": 246,
+            "precision_at_k_pct": 1.6,
+            "recall_at_k_pct": 22.22,
+            "alerts_per_1000_tx": 392.46,
+            "tp_per_100_reviewed": 1.6
+          },
+          "top_500": {
+            "budget_k": 500,
+            "alerts_reviewed": 500,
+            "true_positives": 8,
+            "false_positives": 492,
+            "precision_at_k_pct": 1.6,
+            "recall_at_k_pct": 44.44,
+            "alerts_per_1000_tx": 784.93,
+            "tp_per_100_reviewed": 1.6
+          }
+        }
+      },
+      "receiver_completely_unseen": {
+        "subset_rows": 471,
+        "subset_positives": 20,
+        "metrics": {
+          "top_50": {
+            "budget_k": 50,
+            "alerts_reviewed": 50,
+            "true_positives": 2,
+            "false_positives": 48,
+            "precision_at_k_pct": 4.0,
+            "recall_at_k_pct": 10.0,
+            "alerts_per_1000_tx": 106.16,
+            "tp_per_100_reviewed": 4.0
+          },
+          "top_100": {
+            "budget_k": 100,
+            "alerts_reviewed": 100,
+            "true_positives": 3,
+            "false_positives": 97,
+            "precision_at_k_pct": 3.0,
+            "recall_at_k_pct": 15.0,
+            "alerts_per_1000_tx": 212.31,
+            "tp_per_100_reviewed": 3.0
+          },
+          "top_250": {
+            "budget_k": 250,
+            "alerts_reviewed": 250,
+            "true_positives": 5,
+            "false_positives": 245,
+            "precision_at_k_pct": 2.0,
+            "recall_at_k_pct": 25.0,
+            "alerts_per_1000_tx": 530.79,
+            "tp_per_100_reviewed": 2.0
+          },
+          "top_500": {
+            "budget_k": 500,
+            "alerts_reviewed": 471,
+            "true_positives": 20,
+            "false_positives": 451,
+            "precision_at_k_pct": 4.25,
+            "recall_at_k_pct": 100.0,
+            "alerts_per_1000_tx": 1000.0,
+            "tp_per_100_reviewed": 4.25
+          }
+        }
+      }
+    }
+  },
+  "graph_intelligence": {
+    "graph_summary": {
+      "nodes_count": 5679,
+      "edges_count": 5000,
+      "total_patterns_detected": 161,
+      "pattern_breakdown": {
+        "fan_in": 43,
+        "fan_out": 15,
+        "circular_flow": 0,
+        "rapid_movement": 12,
+        "high_value_anomalies": 90,
+        "concentration": 1
+      }
+    },
+    "sample_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "80032DB60",
+        "involved_accounts": [
+          "800392F30",
+          "80032A660",
+          "80033C3A0",
+          "80034AD40",
+          "800328620",
+          "80034B060",
+          "800391F70",
+          "80034DCA0",
+          "800392D50",
+          "800348A30",
+          "800348590",
+          "800328300",
+          "800391E80",
+          "80033C3F0",
+          "80032D980",
+          "80032D750",
+          "80032DA70",
+          "800393020",
+          "800392EE0",
+          "8003486D0",
+          "800391FC0",
+          "800392A30",
+          "80034A490",
+          "80032A6B0",
+          "800391DE0",
+          "80034AFC0",
+          "80034A530",
+          "800348940",
+          "8003946A0",
+          "800389010",
+          "80032A390",
+          "80034E600",
+          "80032D040",
+          "8003468B0",
+          "800392CB0",
+          "80034DED0",
+          "800348990",
+          "800326F20",
+          "800328580",
+          "800348720",
+          "8003886F0",
+          "80034F9F0",
+          "800392630",
+          "80034AB60",
+          "800392BC0",
+          "80034E470",
+          "80034C2E0",
+          "8003923B0",
+          "800394740",
+          "8003467C0",
+          "800392850",
+          "800388AB0",
+          "80034E010",
+          "8003288A0",
+          "800393C50",
+          "80034B960",
+          "80034A300",
+          "80032A700",
+          "80032A340",
+          "80034B7D0",
+          "80032DB60"
+        ],
+        "involved_transactions": [
+          "TX_4710695",
+          "TX_4710717",
+          "TX_4710746",
+          "TX_4710707",
+          "TX_4710741",
+          "TX_4710699",
+          "TX_4710682",
+          "TX_4710727",
+          "TX_4710694",
+          "TX_4710716",
+          "TX_4710730",
+          "TX_4710744",
+          "TX_4710748",
+          "TX_4710724",
+          "TX_4710721",
+          "TX_4710728",
+          "TX_4710690",
+          "TX_4710697",
+          "TX_4710711",
+          "TX_4710714",
+          "TX_4710731",
+          "TX_4710735",
+          "TX_4710750",
+          "TX_4710685",
+          "TX_4710739",
+          "TX_4710723",
+          "TX_4710740",
+          "TX_4710683",
+          "TX_4710729",
+          "TX_4710734",
+          "TX_4710745",
+          "TX_4710679",
+          "TX_4710753",
+          "TX_4710720",
+          "TX_4710687",
+          "TX_4710743",
+          "TX_4710681",
+          "TX_4710705",
+          "TX_4710752",
+          "TX_4710725",
+          "TX_4710706",
+          "TX_4710709",
+          "TX_4710710",
+          "TX_4710715",
+          "TX_4710722",
+          "TX_4710754",
+          "TX_4710692",
+          "TX_4710726",
+          "TX_4710733",
+          "TX_4710689",
+          "TX_4710708",
+          "TX_4710718",
+          "TX_4710736",
+          "TX_4710737",
+          "TX_4710691",
+          "TX_4710701",
+          "TX_4710755",
+          "TX_4710749",
+          "TX_4710688",
+          "TX_4710747"
+        ],
+        "statistics": {
+          "unique_senders_count": 60,
+          "transaction_count": 60,
+          "total_amount_received": 161293.24,
+          "average_amount_received": 2688.22
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:00",
+          "last_seen": "2022/09/09 18:29"
+        },
+        "severity_score": 1.0,
+        "confidence_level": "HIGH",
+        "investigator_explanation": "Account 80032DB60 received funds from 60 distinct sender accounts totalling $161,293.24 across 60 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      },
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "8022DA710",
+        "involved_accounts": [
+          "8022D98C0",
+          "800F07CD0",
+          "8022D9370",
+          "8022DA6C0",
+          "8022D3CD0",
+          "8022D1110",
+          "8022D23E0",
+          "8022DA580",
+          "8022D0D50",
+          "8022D3C80",
+          "8022DA710"
+        ],
+        "involved_transactions": [
+          "TX_4711441",
+          "TX_4711438",
+          "TX_4711437",
+          "TX_4711439",
+          "TX_4711436",
+          "TX_4711440",
+          "TX_4711435",
+          "TX_4711432",
+          "TX_4711433",
+          "TX_4711434"
+        ],
+        "statistics": {
+          "unique_senders_count": 10,
+          "transaction_count": 10,
+          "total_amount_received": 28408.500000000004,
+          "average_amount_received": 2840.85
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:00",
+          "last_seen": "2022/09/09 18:29"
+        },
+        "severity_score": 1.0,
+        "confidence_level": "HIGH",
+        "investigator_explanation": "Account 8022DA710 received funds from 10 distinct sender accounts totalling $28,408.50 across 10 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      },
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "812653160",
+        "involved_accounts": [
+          "812651A50",
+          "812654280",
+          "81264FD90",
+          "812650C40",
+          "81266D2A0",
+          "812654A90",
+          "81264FCF0",
+          "812643020",
+          "81266C940",
+          "812653510",
+          "812653160"
+        ],
+        "involved_transactions": [
+          "TX_4718309",
+          "TX_4718326",
+          "TX_4718328",
+          "TX_4718294",
+          "TX_4718307",
+          "TX_4718316",
+          "TX_4718291",
+          "TX_4718295",
+          "TX_4718321",
+          "TX_4718332"
+        ],
+        "statistics": {
+          "unique_senders_count": 10,
+          "transaction_count": 10,
+          "total_amount_received": 28525.890000000003,
+          "average_amount_received": 2852.59
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:00",
+          "last_seen": "2022/09/09 18:06"
+        },
+        "severity_score": 1.0,
+        "confidence_level": "HIGH",
+        "investigator_explanation": "Account 812653160 received funds from 10 distinct sender accounts totalling $28,525.89 across 10 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      },
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "80F2EE480",
+        "involved_accounts": [
+          "80F2EE4D0",
+          "80F2EE700",
+          "80F2EE430",
+          "80F2EE520",
+          "80F2EE480"
+        ],
+        "involved_transactions": [
+          "TX_4722777",
+          "TX_4722778",
+          "TX_4722779",
+          "TX_4722780"
+        ],
+        "statistics": {
+          "unique_senders_count": 4,
+          "transaction_count": 4,
+          "total_amount_received": 10124.240000000002,
+          "average_amount_received": 2531.06
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:00",
+          "last_seen": "2022/09/09 18:10"
+        },
+        "severity_score": 0.722,
+        "confidence_level": "MEDIUM",
+        "investigator_explanation": "Account 80F2EE480 received funds from 4 distinct sender accounts totalling $10,124.24 across 4 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      },
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "811987D20",
+        "involved_accounts": [
+          "811987FA0",
+          "811987EB0",
+          "811987F00",
+          "811987D20"
+        ],
+        "involved_transactions": [
+          "TX_4718169",
+          "TX_4718171",
+          "TX_4718170"
+        ],
+        "statistics": {
+          "unique_senders_count": 3,
+          "transaction_count": 3,
+          "total_amount_received": 6599.5599999999995,
+          "average_amount_received": 2199.85
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:02",
+          "last_seen": "2022/09/09 18:24"
+        },
+        "severity_score": 0.667,
+        "confidence_level": "MEDIUM",
+        "investigator_explanation": "Account 811987D20 received funds from 3 distinct sender accounts totalling $6,599.56 across 3 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      },
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "804A4A250",
+        "involved_accounts": [
+          "804A4AB00",
+          "804A495C0",
+          "804A496B0",
+          "804A4AF40",
+          "804A4A250"
+        ],
+        "involved_transactions": [
+          "TX_4719760",
+          "TX_4719758",
+          "TX_4719761",
+          "TX_4719759"
+        ],
+        "statistics": {
+          "unique_senders_count": 4,
+          "transaction_count": 4,
+          "total_amount_received": 650157.77,
+          "average_amount_received": 162539.44
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:02",
+          "last_seen": "2022/09/09 18:21"
+        },
+        "severity_score": 0.722,
+        "confidence_level": "MEDIUM",
+        "investigator_explanation": "Account 804A4A250 received funds from 4 distinct sender accounts totalling $650,157.77 across 4 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      },
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "81052E4D0",
+        "involved_accounts": [
+          "81052BB60",
+          "810529DF0",
+          "810529E40",
+          "81052E100",
+          "81052E060",
+          "81052E4D0"
+        ],
+        "involved_transactions": [
+          "TX_4723155",
+          "TX_4723153",
+          "TX_4723154",
+          "TX_4723152",
+          "TX_4723156"
+        ],
+        "statistics": {
+          "unique_senders_count": 5,
+          "transaction_count": 5,
+          "total_amount_received": 26602.48,
+          "average_amount_received": 5320.5
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:02",
+          "last_seen": "2022/09/09 18:28"
+        },
+        "severity_score": 0.778,
+        "confidence_level": "MEDIUM",
+        "investigator_explanation": "Account 81052E4D0 received funds from 5 distinct sender accounts totalling $26,602.48 across 5 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      },
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "80BCB8200",
+        "involved_accounts": [
+          "80BCB5130",
+          "80BCB4B70",
+          "80BCB4550",
+          "80BCB4C10",
+          "80BCB8020",
+          "80BCB8200"
+        ],
+        "involved_transactions": [
+          "TX_4713597",
+          "TX_4713593",
+          "TX_4713595",
+          "TX_4713596",
+          "TX_4713594"
+        ],
+        "statistics": {
+          "unique_senders_count": 5,
+          "transaction_count": 5,
+          "total_amount_received": 14619.49,
+          "average_amount_received": 2923.9
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:03",
+          "last_seen": "2022/09/09 18:27"
+        },
+        "severity_score": 0.778,
+        "confidence_level": "MEDIUM",
+        "investigator_explanation": "Account 80BCB8200 received funds from 5 distinct sender accounts totalling $14,619.49 across 5 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      },
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "80C6B7EA0",
+        "involved_accounts": [
+          "80C6B3C00",
+          "80C6B7E00",
+          "80C6B7DB0",
+          "80C6B8740",
+          "80C6B3500",
+          "80C6B7020",
+          "80C6B4620",
+          "80C6B3D90",
+          "80C6B7EA0"
+        ],
+        "involved_transactions": [
+          "TX_4713761",
+          "TX_4713765",
+          "TX_4713762",
+          "TX_4713764",
+          "TX_4713763",
+          "TX_4713766",
+          "TX_4713767",
+          "TX_4713768"
+        ],
+        "statistics": {
+          "unique_senders_count": 8,
+          "transaction_count": 8,
+          "total_amount_received": 20697.71,
+          "average_amount_received": 2587.21
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:03",
+          "last_seen": "2022/09/09 18:18"
+        },
+        "severity_score": 0.944,
+        "confidence_level": "HIGH",
+        "investigator_explanation": "Account 80C6B7EA0 received funds from 8 distinct sender accounts totalling $20,697.71 across 8 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      },
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "target_account": "8105B9650",
+        "involved_accounts": [
+          "8105B96F0",
+          "8105B95B0",
+          "8105B96A0",
+          "8105B9650"
+        ],
+        "involved_transactions": [
+          "TX_4714779",
+          "TX_4714780",
+          "TX_4714778"
+        ],
+        "statistics": {
+          "unique_senders_count": 3,
+          "transaction_count": 3,
+          "total_amount_received": 9766.599999999999,
+          "average_amount_received": 3255.53
+        },
+        "time_interval": {
+          "first_seen": "2022/09/09 18:03",
+          "last_seen": "2022/09/09 18:17"
+        },
+        "severity_score": 0.667,
+        "confidence_level": "MEDIUM",
+        "investigator_explanation": "Account 8105B9650 received funds from 3 distinct sender accounts totalling $9,766.60 across 3 transfers, exhibiting classic mule collection funneling behavior.",
+        "known_limitations": "Legitimate merchant, e-commerce, or payroll accounts can exhibit natural fan-in."
+      }
+    ]
+  },
+  "risk_fusion_evaluation": {
+    "fusion_weights": {
+      "model": 0.5,
+      "graph": 0.25,
+      "behavior": 0.15,
+      "rule": 0.1
+    },
+    "fused_budgets": {
+      "total_evaluated_transactions": 368600,
+      "total_positive_ground_truth": 1217,
+      "overall_prevalence_pct": 0.33016820401519265,
+      "budget_metrics": {
+        "top_100": {
+          "budget_k": 100,
+          "alerts_reviewed": 100,
+          "true_positives": 0,
+          "false_positives": 100,
+          "precision_at_k_pct": 0.0,
+          "recall_at_k_pct": 0.0,
+          "alerts_per_1000_tx": 0.27,
+          "tp_per_100_reviewed": 0.0
+        },
+        "top_500": {
+          "budget_k": 500,
+          "alerts_reviewed": 500,
+          "true_positives": 2,
+          "false_positives": 498,
+          "precision_at_k_pct": 0.4,
+          "recall_at_k_pct": 0.16,
+          "alerts_per_1000_tx": 1.36,
+          "tp_per_100_reviewed": 0.4
+        },
+        "top_1000": {
+          "budget_k": 1000,
+          "alerts_reviewed": 1000,
+          "true_positives": 4,
+          "false_positives": 996,
+          "precision_at_k_pct": 0.4,
+          "recall_at_k_pct": 0.33,
+          "alerts_per_1000_tx": 2.71,
+          "tp_per_100_reviewed": 0.4
+        },
+        "top_2500": {
+          "budget_k": 2500,
+          "alerts_reviewed": 2500,
+          "true_positives": 8,
+          "false_positives": 2492,
+          "precision_at_k_pct": 0.32,
+          "recall_at_k_pct": 0.66,
+          "alerts_per_1000_tx": 6.78,
+          "tp_per_100_reviewed": 0.32
+        },
+        "top_5000": {
+          "budget_k": 5000,
+          "alerts_reviewed": 5000,
+          "true_positives": 33,
+          "false_positives": 4967,
+          "precision_at_k_pct": 0.66,
+          "recall_at_k_pct": 2.71,
+          "alerts_per_1000_tx": 13.56,
+          "tp_per_100_reviewed": 0.66
+        }
+      },
+      "tier_distribution": {
+        "Low": 2649,
+        "Medium": 2350,
+        "High": 1
+      }
+    },
+    "comparison_top_1000": {
+      "model_only_precision_pct": 0.7,
+      "model_only_recall_pct": 0.58,
+      "fused_precision_pct": 0.4,
+      "fused_recall_pct": 0.33
+    }
+  },
+  "investigator_cases": {
+    "cases_count": 5,
+    "sample_cases": [
+      {
+        "case_id": "CASE-80032DB6-20220909",
+        "review_status": "Open",
+        "priority_tier": "Critical",
+        "best_alert_rank": 1,
+        "peak_risk_score": 1.0,
+        "primary_account": "80032DB60",
+        "total_suspicious_volume": 7769.72,
+        "alert_count": 3,
+        "connected_accounts_count": 3,
+        "related_accounts": [
+          "80034B7D0",
+          "80034B960",
+          "800392850"
+        ],
+        "relevant_transaction_ids": [
+          "TX_4710695",
+          "TX_4710717",
+          "TX_4710746"
+        ],
+        "detected_graph_patterns": [
+          {
+            "typology": "Fan-In Aggregation (Mule Funnel)",
+            "severity": 0.7,
+            "confidence": "MEDIUM",
+            "explanation": null
+          },
+          {
+            "typology": "Fan-In Aggregation (Mule Funnel)",
+            "severity": 0.7,
+            "confidence": "MEDIUM",
+            "explanation": null
+          },
+          {
+            "typology": "Fan-In Aggregation (Mule Funnel)",
+            "severity": 0.7,
+            "confidence": "MEDIUM",
+            "explanation": null
+          }
+        ],
+        "activity_timeline": [
+          {
+            "step": 1,
+            "timestamp": "2022/09/09 18:00",
+            "transaction_id": "TX_4710695",
+            "sender": "80034B960",
+            "receiver": "80032DB60",
+            "amount": 1205.34,
+            "currency": "US Dollar",
+            "score": 1.0,
+            "summary": "Alert for transaction TX_4710695: Account 80034B960 transferred $1,205.34 US Dollar to 80032DB60 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #1) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, originates from a sender disbursing to 7 distinct recipients, exhibits structural graph involvement (fan-in aggregation (mule funnel))."
+          },
+          {
+            "step": 2,
+            "timestamp": "2022/09/09 18:00",
+            "transaction_id": "TX_4710717",
+            "sender": "80034B7D0",
+            "receiver": "80032DB60",
+            "amount": 4200.65,
+            "currency": "US Dollar",
+            "score": 1.0,
+            "summary": "Alert for transaction TX_4710717: Account 80034B7D0 transferred $4,200.65 US Dollar to 80032DB60 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #2) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, exhibits structural graph involvement (fan-in aggregation (mule funnel))."
+          },
+          {
+            "step": 3,
+            "timestamp": "2022/09/09 18:00",
+            "transaction_id": "TX_4710746",
+            "sender": "800392850",
+            "receiver": "80032DB60",
+            "amount": 2363.73,
+            "currency": "US Dollar",
+            "score": 1.0,
+            "summary": "Alert for transaction TX_4710746: Account 800392850 transferred $2,363.73 US Dollar to 80032DB60 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #3) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, exhibits structural graph involvement (fan-in aggregation (mule funnel))."
+          }
+        ],
+        "investigation_summary": "Case CASE-80032DB6-20220909 opened for primary entity 80032DB60. Encompasses 3 suspicious transactions totalling $7,769.72 across 3 connected counterparties. Peak model risk score: 100.0% (Critical Priority). Identified 3 graph pattern(s): Fan-In Aggregation (Mule Funnel), Fan-In Aggregation (Mule Funnel), Fan-In Aggregation (Mule Funnel).",
+        "compliance_disclaimer": "NOTICE: This case file represents an automated investigatory lead generated by FinGuard AI based on statistical anomaly detection and graph topology signals. It is designed to assist compliance analysts and does not constitute a confirmed financial crime, legal determination, or proof of illicit activity."
+      },
+      {
+        "case_id": "CASE-800E29A0-20220909",
+        "review_status": "Open",
+        "priority_tier": "Critical",
+        "best_alert_rank": 4,
+        "peak_risk_score": 1.0,
+        "primary_account": "800E29A00",
+        "total_suspicious_volume": 1226.4,
+        "alert_count": 1,
+        "connected_accounts_count": 1,
+        "related_accounts": [
+          "800942830"
+        ],
+        "relevant_transaction_ids": [
+          "TX_4710992"
+        ],
+        "detected_graph_patterns": [],
+        "activity_timeline": [
+          {
+            "step": 1,
+            "timestamp": "2022/09/09 18:00",
+            "transaction_id": "TX_4710992",
+            "sender": "800942830",
+            "receiver": "800E29A00",
+            "amount": 1226.4,
+            "currency": "US Dollar",
+            "score": 1.0,
+            "summary": "Alert for transaction TX_4710992: Account 800942830 transferred $1,226.40 US Dollar to 800E29A00 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #4) because it assigned a 100.0% statistical risk score by the LightGBM temporal model."
+          }
+        ],
+        "investigation_summary": "Case CASE-800E29A0-20220909 opened for primary entity 800E29A00. Encompasses 1 suspicious transactions totalling $1,226.40 across 1 connected counterparties. Peak model risk score: 100.0% (Critical Priority). ",
+        "compliance_disclaimer": "NOTICE: This case file represents an automated investigatory lead generated by FinGuard AI based on statistical anomaly detection and graph topology signals. It is designed to assist compliance analysts and does not constitute a confirmed financial crime, legal determination, or proof of illicit activity."
+      }
+    ]
+  },
+  "metadata": {
+    "execution_date": "2026-10-20 14:15:30",
+    "total_runtime_seconds": 38.47,
+    "evaluated_test_transactions": 368600
+  }
+}

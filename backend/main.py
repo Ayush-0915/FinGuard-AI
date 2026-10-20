@@ -90,6 +90,20 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 
 app = FastAPI(title="FinGuard AI API", description="AI-Powered Financial Crime Detection and Risk Intelligence", version="1.0.0")
 
+# Mount Phase 4 Intelligence API Router (Alert Prioritization, Grounded Explanations, Graph Intelligence, Cases)
+try:
+    from phase4_router import router as phase4_router
+except ImportError:
+    from backend.phase4_router import router as phase4_router
+app.include_router(phase4_router)
+
+# Mount IBM AML Benchmark Dataset Router (/api/v2/ibm)
+try:
+    from ibm_benchmark_router import router as ibm_benchmark_router
+except ImportError:
+    from backend.ibm_benchmark_router import router as ibm_benchmark_router
+app.include_router(ibm_benchmark_router)
+
 # ---------------------------------------------------------
 # MOCK DATA GENERATION ENGINE
 # ---------------------------------------------------------
@@ -253,7 +267,7 @@ async def websocket_endpoint(websocket: WebSocket):
         await websocket.send_json(get_dashboard_data())
         while True:
             await websocket.receive_text()
-    except WebSocketDisconnect:
+    except (WebSocketDisconnect, Exception):
         manager.disconnect(websocket)
 
 @app.get("/accounts")

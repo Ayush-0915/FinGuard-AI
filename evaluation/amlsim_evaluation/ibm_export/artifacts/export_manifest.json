@@ -1,0 +1,102 @@
+{
+  "manifest_version": "1.0.0",
+  "run_id": "RUN-IBM-HI-SMALL-20261020-01",
+  "generated_at": "2026-10-20T15:46:12.475997",
+  "pipeline_version": "1.0.0-hybrid",
+  "model_version": "LightGBM-4.5.0-muleguard",
+  "feature_contract": {
+    "feature_count": 26,
+    "features": [
+      "from_bank",
+      "to_bank",
+      "amount_received",
+      "receiving_currency",
+      "amount_paid",
+      "payment_currency",
+      "payment_format",
+      "hour",
+      "day_of_week",
+      "amount_diff",
+      "amount_ratio",
+      "currency_match",
+      "same_bank",
+      "sender_transaction_count",
+      "sender_total_amount",
+      "sender_avg_amount",
+      "sender_max_amount",
+      "sender_unique_receivers",
+      "sender_unique_banks",
+      "receiver_transaction_count",
+      "receiver_total_amount",
+      "receiver_avg_amount",
+      "receiver_max_amount",
+      "receiver_unique_senders",
+      "receiver_unique_banks",
+      "seconds_since_previous"
+    ]
+  },
+  "provenance_hashes": {
+    "dataset_csv": {
+      "path": "C:\\Users\\ayush\\Desktop\\Private\\MuleGuard\\data\\aml_dataset\\HI-Small_Trans.csv",
+      "sha256": "b19d39f515523373f991b689c07e11e7b0b95c17a2c27a87d91584ae16c5b040",
+      "verified_match": true
+    },
+    "lightgbm_model": {
+      "path": "C:\\Users\\ayush\\Desktop\\Private\\MuleGuard\\models\\muleguard_lightgbm.pkl",
+      "sha256": "02c5f122e1ee729bd97bb08e8d004dae1b4b919416384c4d5c214598af702fa2",
+      "verified_match": true
+    },
+    "category_encoders": {
+      "path": "C:\\Users\\ayush\\Desktop\\Private\\MuleGuard\\models\\category_encoders.pkl",
+      "sha256": "ff5d855fe24e3fddac6a136be0d8ed048e0b413486c9733b7bd5addcdc65839a",
+      "verified_match": true
+    }
+  },
+  "dataset_ingestion_statistics": {
+    "total_rows_scanned": 5078345,
+    "valid_rows_count": 5078345,
+    "invalid_rows_count": 0,
+    "duplicate_rows_count": 9,
+    "positive_labels_count": 5177,
+    "negative_labels_count": 5073168,
+    "prevalence_pct": 0.10194266045335636
+  },
+  "selection_summary": {
+    "total_scanned_rows": 5078345,
+    "selected_records_count": 1000,
+    "selection_cap": 1000,
+    "selection_policy": "Top-500 Alerts + 250 Graph Counterparties + 250 Baseline Samples",
+    "timestamp_range": {
+      "min": "2022/09/01 00:00",
+      "max": "2022/09/11 09:24"
+    }
+  },
+  "label_protection_policy": "The ground-truth laundering label 'Is Laundering' is strictly isolated in evaluation_ground_truth.json for offline benchmark audit purposes. It is completely excluded from inference feature inputs, model scoring, and operational database payloads.",
+  "output_artifacts": {
+    "runs": {
+      "file_name": "ibm_dataset_runs.json",
+      "size_bytes": 957,
+      "sha256": "27f5849f49e6191839897592da86da0545afc2ff7f733109644bba8f51f3abd4"
+    },
+    "transactions": {
+      "file_name": "ibm_benchmark_transactions.json",
+      "size_bytes": 389195,
+      "sha256": "3624d3da93ddb17ddd21fbc887d278c2443e5e491b45e2be5489f3bfad101939"
+    },
+    "scores": {
+      "file_name": "ibm_benchmark_scores.json",
+      "size_bytes": 286797,
+      "sha256": "64c8afe0bfffe021b4ab4e17491da3e902e5e116f715a540a1fa82a6366bc015"
+    },
+    "evidence": {
+      "file_name": "ibm_benchmark_evidence.json",
+      "size_bytes": 1126980,
+      "sha256": "c13904891509616994690cbd1e382f463c5596fb98ffc934767373ae28763213"
+    },
+    "evaluation_ground_truth": {
+      "file_name": "evaluation_ground_truth.json",
+      "size_bytes": 24003,
+      "sha256": "c6d8a75d1e6441e473bf824a3425623b8c193a78fbebe1dda7fea277f85d179d"
+    }
+  }
+}

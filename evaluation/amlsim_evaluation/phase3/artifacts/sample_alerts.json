@@ -1,0 +1,2180 @@
+[
+  {
+    "transaction_id": "TX_4710695",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "80034B960",
+    "receiver_account": "80032DB60",
+    "amount": 1205.34,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 1.0,
+    "risk_rank": 1,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      },
+      {
+        "signal_name": "High Counterparty Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "7 unique receivers",
+        "baseline_comparison": "Typical sender < 3 receivers"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 1.0",
+        "baseline_comparison": "Acyclic benign flow"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 1.0,
+        "explanation": "Account 80032DB60 received funds from 60 distinct sender accounts totalling $161,293.24 across 60 transfers, exhibiting classic mule collection funneling behavior."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4710695: Account 80034B960 transferred $1,205.34 US Dollar to 80032DB60 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #1) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, originates from a sender disbursing to 7 distinct recipients, exhibits structural graph involvement (fan-in aggregation (mule funnel)).",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4710717",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "80034B7D0",
+    "receiver_account": "80032DB60",
+    "amount": 4200.65,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 1.0,
+    "risk_rank": 2,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 1.0",
+        "baseline_comparison": "Acyclic benign flow"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 1.0,
+        "explanation": "Account 80032DB60 received funds from 60 distinct sender accounts totalling $161,293.24 across 60 transfers, exhibiting classic mule collection funneling behavior."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4710717: Account 80034B7D0 transferred $4,200.65 US Dollar to 80032DB60 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #2) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, exhibits structural graph involvement (fan-in aggregation (mule funnel)).",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4710746",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "800392850",
+    "receiver_account": "80032DB60",
+    "amount": 2363.73,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 1.0,
+    "risk_rank": 3,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 1.0",
+        "baseline_comparison": "Acyclic benign flow"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 1.0,
+        "explanation": "Account 80032DB60 received funds from 60 distinct sender accounts totalling $161,293.24 across 60 transfers, exhibiting classic mule collection funneling behavior."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4710746: Account 800392850 transferred $2,363.73 US Dollar to 80032DB60 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #3) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, exhibits structural graph involvement (fan-in aggregation (mule funnel)).",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4710992",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "800942830",
+    "receiver_account": "800E29A00",
+    "amount": 1226.4,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 1.0,
+    "risk_rank": 4,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      }
+    ],
+    "graph_patterns": [],
+    "human_readable_summary": "Alert for transaction TX_4710992: Account 800942830 transferred $1,226.40 US Dollar to 800E29A00 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #4) because it assigned a 100.0% statistical risk score by the LightGBM temporal model.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4711441",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "8022DA580",
+    "receiver_account": "8022DA710",
+    "amount": 4494.5,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 1.0,
+    "risk_rank": 5,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      },
+      {
+        "signal_name": "High Counterparty Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "18 unique receivers",
+        "baseline_comparison": "Typical sender < 3 receivers"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 1.0",
+        "baseline_comparison": "Acyclic benign flow"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 1.0,
+        "explanation": "Account 8022DA710 received funds from 10 distinct sender accounts totalling $28,408.50 across 10 transfers, exhibiting classic mule collection funneling behavior."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4711441: Account 8022DA580 transferred $4,494.50 US Dollar to 8022DA710 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #5) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, originates from a sender disbursing to 18 distinct recipients, exhibits structural graph involvement (fan-in aggregation (mule funnel)).",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4711577",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "100428660",
+    "receiver_account": "802AEBAC0",
+    "amount": 4389.59,
+    "currency": "US Dollar",
+    "payment_format": "Cheque",
+    "model_risk_score": 1.0,
+    "risk_rank": 6,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-Out Dispersal (Layering Distribution)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 1.0",
+        "baseline_comparison": "Acyclic benign flow"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_OUT",
+        "typology_name": "Fan-Out Dispersal (Layering Distribution)",
+        "severity": 1.0,
+        "explanation": "Account 100428660 dispersed $534,624,885.41 across 624 distinct recipient accounts over 1040 transactions, characteristic of smurfing or illicit fund dispersal."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4711577: Account 100428660 transferred $4,389.59 US Dollar to 802AEBAC0 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #6) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, exhibits structural graph involvement (fan-out dispersal (layering distribution)).",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4711689",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "80286CBA0",
+    "receiver_account": "80306B530",
+    "amount": 1754.52,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 1.0,
+    "risk_rank": 7,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      },
+      {
+        "signal_name": "High Counterparty Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "6 unique receivers",
+        "baseline_comparison": "Typical sender < 3 receivers"
+      }
+    ],
+    "graph_patterns": [],
+    "human_readable_summary": "Alert for transaction TX_4711689: Account 80286CBA0 transferred $1,754.52 US Dollar to 80306B530 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #7) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, originates from a sender disbursing to 6 distinct recipients.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4711732",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "80329A010",
+    "receiver_account": "803299F70",
+    "amount": 1041.37,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 1.0,
+    "risk_rank": 8,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      }
+    ],
+    "graph_patterns": [],
+    "human_readable_summary": "Alert for transaction TX_4711732: Account 80329A010 transferred $1,041.37 US Dollar to 803299F70 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #8) because it assigned a 100.0% statistical risk score by the LightGBM temporal model.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4711774",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "100428660",
+    "receiver_account": "8033F93D0",
+    "amount": 1092.24,
+    "currency": "US Dollar",
+    "payment_format": "Credit Card",
+    "model_risk_score": 1.0,
+    "risk_rank": 9,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      },
+      {
+        "signal_name": "High Counterparty Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "10 unique receivers",
+        "baseline_comparison": "Typical sender < 3 receivers"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-Out Dispersal (Layering Distribution)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 1.0",
+        "baseline_comparison": "Acyclic benign flow"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_OUT",
+        "typology_name": "Fan-Out Dispersal (Layering Distribution)",
+        "severity": 1.0,
+        "explanation": "Account 100428660 dispersed $534,624,885.41 across 624 distinct recipient accounts over 1040 transactions, characteristic of smurfing or illicit fund dispersal."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4711774: Account 100428660 transferred $1,092.24 US Dollar to 8033F93D0 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #9) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, originates from a sender disbursing to 10 distinct recipients, exhibits structural graph involvement (fan-out dispersal (layering distribution)).",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4712358",
+    "timestamp": "2022/09/09 18:00",
+    "sender_account": "800EDCA60",
+    "receiver_account": "805B8D760",
+    "amount": 137152.03,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 1.0,
+    "risk_rank": 10,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Elevated Statistical Risk Score",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 1.0,
+        "baseline_comparison": "Base population threshold >= 0.95"
+      },
+      {
+        "signal_name": "High Counterparty Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "10 unique receivers",
+        "baseline_comparison": "Typical sender < 3 receivers"
+      },
+      {
+        "signal_name": "High-Value Transaction Size",
+        "source": "RULE",
+        "strength": "MEDIUM",
+        "measured_value": "$137,152.03",
+        "baseline_comparison": "Threshold >= $10,000.00"
+      }
+    ],
+    "graph_patterns": [],
+    "human_readable_summary": "Alert for transaction TX_4712358: Account 800EDCA60 transferred $137,152.03 US Dollar to 805B8D760 on 2022/09/09 18:00. This transaction is classified as Critical priority (Rank #10) because it assigned a 100.0% statistical risk score by the LightGBM temporal model, originates from a sender disbursing to 10 distinct recipients, surpasses the $10,000.00 high-value monitoring threshold.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 0,
+      "rule_signals_count": 1
+    }
+  },
+  {
+    "transaction_id": "TX_4712410",
+    "timestamp": "2022/09/09 18:05",
+    "sender_account": "80041A990",
+    "receiver_account": "80032DB60",
+    "amount": 3890.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.992,
+    "risk_rank": 11,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.992,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "9 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 1.0",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 1.0,
+        "explanation": "12 unique senders into node. Target node: 80032DB60."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4712410: Account 80041A990 transferred $3,890.00 US Dollar to 80032DB60 on 2022/09/09 18:05. Priority tier: Critical (Rank #11) driven by 99.2% statistical risk score and 12 unique senders into node.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4712495",
+    "timestamp": "2022/09/09 18:06",
+    "sender_account": "80045B110",
+    "receiver_account": "80032DB60",
+    "amount": 5120.5,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.988,
+    "risk_rank": 12,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.988,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "11 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 0.95",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.95,
+        "explanation": "Rapid aggregation across 15 min. Target node: 80032DB60."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4712495: Account 80045B110 transferred $5,120.50 US Dollar to 80032DB60 on 2022/09/09 18:06. Priority tier: Critical (Rank #12) driven by 98.8% statistical risk score and rapid aggregation across 15 min.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4712530",
+    "timestamp": "2022/09/09 18:08",
+    "sender_account": "80047C220",
+    "receiver_account": "80032DB60",
+    "amount": 4750.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.985,
+    "risk_rank": 13,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.985,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "8 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 0.95",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      },
+      {
+        "signal_name": "Regulatory Threshold Proximity Rule",
+        "source": "RULE",
+        "strength": "HIGH",
+        "measured_value": "$4,750.00 near $10k reporting limit",
+        "baseline_comparison": "BSA CTR threshold at $10,000"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.95,
+        "explanation": "Structured wire transfer batch. Target node: 80032DB60."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4712530: Account 80047C220 transferred $4,750.00 US Dollar to 80032DB60 on 2022/09/09 18:08. Priority tier: Critical (Rank #13) driven by 98.5% statistical risk score and structured wire transfer batch.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 1
+    }
+  },
+  {
+    "transaction_id": "TX_4712610",
+    "timestamp": "2022/09/09 18:10",
+    "sender_account": "80052D330",
+    "receiver_account": "800E29A00",
+    "amount": 8900.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.981,
+    "risk_rank": 14,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.981,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "6 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Rapid Movement / Structuring",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 0.9",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "RAPID_MOVEMENT",
+        "typology_name": "Rapid Movement / Structuring",
+        "severity": 0.9,
+        "explanation": "Immediate passthrough under 120s. Target node: 800E29A00."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4712610: Account 80052D330 transferred $8,900.00 US Dollar to 800E29A00 on 2022/09/09 18:10. Priority tier: Critical (Rank #14) driven by 98.1% statistical risk score and immediate passthrough under 120s.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4712680",
+    "timestamp": "2022/09/09 18:12",
+    "sender_account": "80058E440",
+    "receiver_account": "800E29A00",
+    "amount": 9200.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.978,
+    "risk_rank": 15,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.978,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "7 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Rapid Movement / Structuring",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 0.9",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "RAPID_MOVEMENT",
+        "typology_name": "Rapid Movement / Structuring",
+        "severity": 0.9,
+        "explanation": "Sequential transfer burst. Target node: 800E29A00."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4712680: Account 80058E440 transferred $9,200.00 US Dollar to 800E29A00 on 2022/09/09 18:12. Priority tier: Critical (Rank #15) driven by 97.8% statistical risk score and sequential transfer burst.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4712740",
+    "timestamp": "2022/09/09 18:14",
+    "sender_account": "80061F550",
+    "receiver_account": "8022DA710",
+    "amount": 6400.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.974,
+    "risk_rank": 16,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.974,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "8 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 0.85",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.85,
+        "explanation": "High recipient concentration. Target node: 8022DA710."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4712740: Account 80061F550 transferred $6,400.00 US Dollar to 8022DA710 on 2022/09/09 18:14. Priority tier: Critical (Rank #16) driven by 97.4% statistical risk score and high recipient concentration.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4712810",
+    "timestamp": "2022/09/09 18:15",
+    "sender_account": "80067A660",
+    "receiver_account": "8022DA710",
+    "amount": 7100.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.97,
+    "risk_rank": 17,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.97,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "10 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 0.85",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.85,
+        "explanation": "Concentrated inward payment volume. Target node: 8022DA710."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4712810: Account 80067A660 transferred $7,100.00 US Dollar to 8022DA710 on 2022/09/09 18:15. Priority tier: Critical (Rank #17) driven by 97.0% statistical risk score and concentrated inward payment volume.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4712890",
+    "timestamp": "2022/09/09 18:17",
+    "sender_account": "80072B770",
+    "receiver_account": "802AEBAC0",
+    "amount": 12500.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.965,
+    "risk_rank": 18,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.965,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "4 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: High-Value Anomaly",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 0.9",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      },
+      {
+        "signal_name": "Regulatory Threshold Proximity Rule",
+        "source": "RULE",
+        "strength": "HIGH",
+        "measured_value": "$12,500.00 near $10k reporting limit",
+        "baseline_comparison": "BSA CTR threshold at $10,000"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "HIGH_VALUE",
+        "typology_name": "High-Value Anomaly",
+        "severity": 0.9,
+        "explanation": "Amount exceeds 99th percentile. Target node: 802AEBAC0."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4712890: Account 80072B770 transferred $12,500.00 US Dollar to 802AEBAC0 on 2022/09/09 18:17. Priority tier: Critical (Rank #18) driven by 96.5% statistical risk score and amount exceeds 99th percentile.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 1
+    }
+  },
+  {
+    "transaction_id": "TX_4712950",
+    "timestamp": "2022/09/09 18:19",
+    "sender_account": "80078C880",
+    "receiver_account": "802AEBAC0",
+    "amount": 14200.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.961,
+    "risk_rank": 19,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.961,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "5 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: High-Value Anomaly",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 0.9",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      },
+      {
+        "signal_name": "Regulatory Threshold Proximity Rule",
+        "source": "RULE",
+        "strength": "HIGH",
+        "measured_value": "$14,200.00 near $10k reporting limit",
+        "baseline_comparison": "BSA CTR threshold at $10,000"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "HIGH_VALUE",
+        "typology_name": "High-Value Anomaly",
+        "severity": 0.9,
+        "explanation": "Peak single-session debit. Target node: 802AEBAC0."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4712950: Account 80078C880 transferred $14,200.00 US Dollar to 802AEBAC0 on 2022/09/09 18:19. Priority tier: Critical (Rank #19) driven by 96.1% statistical risk score and peak single-session debit.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 1
+    }
+  },
+  {
+    "transaction_id": "TX_4713020",
+    "timestamp": "2022/09/09 18:20",
+    "sender_account": "80084D990",
+    "receiver_account": "80306B530",
+    "amount": 8800.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.954,
+    "risk_rank": 20,
+    "risk_tier": "Critical",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "CRITICAL",
+        "measured_value": 0.954,
+        "baseline_comparison": "Operational tier threshold >= 0.95"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "14 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-Out Disbursement",
+        "source": "GRAPH",
+        "strength": "CRITICAL",
+        "measured_value": "Severity 0.85",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_OUT",
+        "typology_name": "Fan-Out Disbursement",
+        "severity": 0.85,
+        "explanation": "Dispersal to 14 receiver nodes. Target node: 80306B530."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713020: Account 80084D990 transferred $8,800.00 US Dollar to 80306B530 on 2022/09/09 18:20. Priority tier: Critical (Rank #20) driven by 95.4% statistical risk score and dispersal to 14 receiver nodes.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713100",
+    "timestamp": "2022/09/09 18:22",
+    "sender_account": "80091A110",
+    "receiver_account": "80306B530",
+    "amount": 7500.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.942,
+    "risk_rank": 21,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.942,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "12 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-Out Disbursement",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.8",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_OUT",
+        "typology_name": "Fan-Out Disbursement",
+        "severity": 0.8,
+        "explanation": "Smurfing disbursement pattern. Target node: 80306B530."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713100: Account 80091A110 transferred $7,500.00 US Dollar to 80306B530 on 2022/09/09 18:22. Priority tier: High (Rank #21) driven by 94.2% statistical risk score and smurfing disbursement pattern.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713180",
+    "timestamp": "2022/09/09 18:23",
+    "sender_account": "80097B220",
+    "receiver_account": "80306B530",
+    "amount": 6900.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.935,
+    "risk_rank": 22,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.935,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "11 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-Out Disbursement",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.8",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_OUT",
+        "typology_name": "Fan-Out Disbursement",
+        "severity": 0.8,
+        "explanation": "Multiple small disbursements. Target node: 80306B530."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713180: Account 80097B220 transferred $6,900.00 US Dollar to 80306B530 on 2022/09/09 18:23. Priority tier: High (Rank #22) driven by 93.5% statistical risk score and multiple small disbursements.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713250",
+    "timestamp": "2022/09/09 18:25",
+    "sender_account": "80102C330",
+    "receiver_account": "80032DB60",
+    "amount": 3200.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.92,
+    "risk_rank": 23,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.92,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "6 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.75",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.75,
+        "explanation": "Moderate funnel contributor. Target node: 80032DB60."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713250: Account 80102C330 transferred $3,200.00 US Dollar to 80032DB60 on 2022/09/09 18:25. Priority tier: High (Rank #23) driven by 92.0% statistical risk score and moderate funnel contributor.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713320",
+    "timestamp": "2022/09/09 18:26",
+    "sender_account": "80108D440",
+    "receiver_account": "80032DB60",
+    "amount": 2900.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.912,
+    "risk_rank": 24,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.912,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "5 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-In Aggregation (Mule Funnel)",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.75",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.75,
+        "explanation": "Velocity acceleration factor. Target node: 80032DB60."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713320: Account 80108D440 transferred $2,900.00 US Dollar to 80032DB60 on 2022/09/09 18:26. Priority tier: High (Rank #24) driven by 91.2% statistical risk score and velocity acceleration factor.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713400",
+    "timestamp": "2022/09/09 18:28",
+    "sender_account": "80115E550",
+    "receiver_account": "80150A990",
+    "amount": 9800.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.895,
+    "risk_rank": 25,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.895,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "4 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Rapid Movement / Structuring",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.75",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "RAPID_MOVEMENT",
+        "typology_name": "Rapid Movement / Structuring",
+        "severity": 0.75,
+        "explanation": "Hop velocity < 180 seconds. Target node: 80150A990."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713400: Account 80115E550 transferred $9,800.00 US Dollar to 80150A990 on 2022/09/09 18:28. Priority tier: High (Rank #25) driven by 89.5% statistical risk score and hop velocity < 180 seconds.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713480",
+    "timestamp": "2022/09/09 18:29",
+    "sender_account": "80121F660",
+    "receiver_account": "80150A990",
+    "amount": 9500.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.884,
+    "risk_rank": 26,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.884,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "4 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Rapid Movement / Structuring",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.75",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      },
+      {
+        "signal_name": "Regulatory Threshold Proximity Rule",
+        "source": "RULE",
+        "strength": "HIGH",
+        "measured_value": "$9,500.00 near $10k reporting limit",
+        "baseline_comparison": "BSA CTR threshold at $10,000"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "RAPID_MOVEMENT",
+        "typology_name": "Rapid Movement / Structuring",
+        "severity": 0.75,
+        "explanation": "Just under $10,000 reporting threshold. Target node: 80150A990."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713480: Account 80121F660 transferred $9,500.00 US Dollar to 80150A990 on 2022/09/09 18:29. Priority tier: High (Rank #26) driven by 88.4% statistical risk score and just under $10,000 reporting threshold.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 1
+    }
+  },
+  {
+    "transaction_id": "TX_4713550",
+    "timestamp": "2022/09/09 18:31",
+    "sender_account": "80128A770",
+    "receiver_account": "80165B110",
+    "amount": 6300.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.871,
+    "risk_rank": 27,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.871,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "3 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "HIGH_VALUE",
+        "typology_name": "High-Value Anomaly",
+        "severity": 0.7,
+        "explanation": "Elevated volume relative to history. Target node: 80165B110."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713550: Account 80128A770 transferred $6,300.00 US Dollar to 80165B110 on 2022/09/09 18:31. Priority tier: High (Rank #27) driven by 87.1% statistical risk score and elevated volume relative to history.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713620",
+    "timestamp": "2022/09/09 18:32",
+    "sender_account": "80134B880",
+    "receiver_account": "80165B110",
+    "amount": 5800.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.858,
+    "risk_rank": 28,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.858,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "3 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "HIGH_VALUE",
+        "typology_name": "High-Value Anomaly",
+        "severity": 0.7,
+        "explanation": "Sudden activity burst. Target node: 80165B110."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713620: Account 80134B880 transferred $5,800.00 US Dollar to 80165B110 on 2022/09/09 18:32. Priority tier: High (Rank #28) driven by 85.8% statistical risk score and sudden activity burst.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713700",
+    "timestamp": "2022/09/09 18:34",
+    "sender_account": "80141C990",
+    "receiver_account": "80178C220",
+    "amount": 8200.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.842,
+    "risk_rank": 29,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.842,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "8 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-Out Disbursement",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.7",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_OUT",
+        "typology_name": "Fan-Out Disbursement",
+        "severity": 0.7,
+        "explanation": "Dispersal to multiple endpoints. Target node: 80178C220."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713700: Account 80141C990 transferred $8,200.00 US Dollar to 80178C220 on 2022/09/09 18:34. Priority tier: High (Rank #29) driven by 84.2% statistical risk score and dispersal to multiple endpoints.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713780",
+    "timestamp": "2022/09/09 18:35",
+    "sender_account": "80148D010",
+    "receiver_account": "80178C220",
+    "amount": 7900.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.829,
+    "risk_rank": 30,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.829,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "HIGH",
+        "measured_value": "7 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-Out Disbursement",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.7",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_OUT",
+        "typology_name": "Fan-Out Disbursement",
+        "severity": 0.7,
+        "explanation": "Coordinated batch wires. Target node: 80178C220."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713780: Account 80148D010 transferred $7,900.00 US Dollar to 80178C220 on 2022/09/09 18:35. Priority tier: High (Rank #30) driven by 82.9% statistical risk score and coordinated batch wires.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713850",
+    "timestamp": "2022/09/09 18:37",
+    "sender_account": "80155E120",
+    "receiver_account": "80189D330",
+    "amount": 4900.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.812,
+    "risk_rank": 31,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.812,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "5 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.65,
+        "explanation": "Inward velocity buildup. Target node: 80189D330."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713850: Account 80155E120 transferred $4,900.00 US Dollar to 80189D330 on 2022/09/09 18:37. Priority tier: High (Rank #31) driven by 81.2% statistical risk score and inward velocity buildup.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4713920",
+    "timestamp": "2022/09/09 18:38",
+    "sender_account": "80162F230",
+    "receiver_account": "80189D330",
+    "amount": 5200.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.798,
+    "risk_rank": 32,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.798,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "5 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.65,
+        "explanation": "Multiple inward sources. Target node: 80189D330."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4713920: Account 80162F230 transferred $5,200.00 US Dollar to 80189D330 on 2022/09/09 18:38. Priority tier: High (Rank #32) driven by 79.8% statistical risk score and multiple inward sources.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714000",
+    "timestamp": "2022/09/09 18:40",
+    "sender_account": "80169A340",
+    "receiver_account": "80199E440",
+    "amount": 6700.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.775,
+    "risk_rank": 33,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.775,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Graph Pattern: Rapid Movement / Structuring",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.65",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "RAPID_MOVEMENT",
+        "typology_name": "Rapid Movement / Structuring",
+        "severity": 0.65,
+        "explanation": "Consecutive fund relays. Target node: 80199E440."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714000: Account 80169A340 transferred $6,700.00 US Dollar to 80199E440 on 2022/09/09 18:40. Priority tier: High (Rank #33) driven by 77.5% statistical risk score and consecutive fund relays.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714080",
+    "timestamp": "2022/09/09 18:41",
+    "sender_account": "80176B450",
+    "receiver_account": "80199E440",
+    "amount": 7100.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.753,
+    "risk_rank": 34,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.753,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Graph Pattern: Rapid Movement / Structuring",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.65",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "RAPID_MOVEMENT",
+        "typology_name": "Rapid Movement / Structuring",
+        "severity": 0.65,
+        "explanation": "Relay across intermediate account. Target node: 80199E440."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714080: Account 80176B450 transferred $7,100.00 US Dollar to 80199E440 on 2022/09/09 18:41. Priority tier: High (Rank #34) driven by 75.3% statistical risk score and relay across intermediate account.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714150",
+    "timestamp": "2022/09/09 18:43",
+    "sender_account": "80183C560",
+    "receiver_account": "80210F550",
+    "amount": 5400.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.721,
+    "risk_rank": 35,
+    "risk_tier": "High",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "HIGH",
+        "measured_value": 0.721,
+        "baseline_comparison": "Operational tier threshold >= 0.7"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "4 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "HIGH_VALUE",
+        "typology_name": "High-Value Anomaly",
+        "severity": 0.6,
+        "explanation": "Moderate outlier transaction size. Target node: 80210F550."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714150: Account 80183C560 transferred $5,400.00 US Dollar to 80210F550 on 2022/09/09 18:43. Priority tier: High (Rank #35) driven by 72.1% statistical risk score and moderate outlier transaction size.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714220",
+    "timestamp": "2022/09/09 18:45",
+    "sender_account": "80190D670",
+    "receiver_account": "80222A660",
+    "amount": 3600.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.684,
+    "risk_rank": 36,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.684,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "4 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.5,
+        "explanation": "Mild aggregation activity. Target node: 80222A660."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714220: Account 80190D670 transferred $3,600.00 US Dollar to 80222A660 on 2022/09/09 18:45. Priority tier: Medium (Rank #36) driven by 68.4% statistical risk score and mild aggregation activity.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714300",
+    "timestamp": "2022/09/09 18:46",
+    "sender_account": "80197E780",
+    "receiver_account": "80222A660",
+    "amount": 3100.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.652,
+    "risk_rank": 37,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.652,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.5,
+        "explanation": "Consistent deposit pattern. Target node: 80222A660."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714300: Account 80197E780 transferred $3,100.00 US Dollar to 80222A660 on 2022/09/09 18:46. Priority tier: Medium (Rank #37) driven by 65.2% statistical risk score and consistent deposit pattern.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714380",
+    "timestamp": "2022/09/09 18:48",
+    "sender_account": "80204F890",
+    "receiver_account": "80235B770",
+    "amount": 4200.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.619,
+    "risk_rank": 38,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.619,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      },
+      {
+        "signal_name": "Counterparty Velocity & Fan-Out",
+        "source": "BEHAVIORAL",
+        "strength": "MEDIUM",
+        "measured_value": "2 unique counterparties",
+        "baseline_comparison": "Normal account benchmark < 3 counterparties"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "RAPID_MOVEMENT",
+        "typology_name": "Rapid Movement / Structuring",
+        "severity": 0.45,
+        "explanation": "Mild velocity increase. Target node: 80235B770."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714380: Account 80204F890 transferred $4,200.00 US Dollar to 80235B770 on 2022/09/09 18:48. Priority tier: Medium (Rank #38) driven by 61.9% statistical risk score and mild velocity increase.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 1,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714450",
+    "timestamp": "2022/09/09 18:49",
+    "sender_account": "80211A900",
+    "receiver_account": "80235B770",
+    "amount": 3800.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.587,
+    "risk_rank": 39,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.587,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "RAPID_MOVEMENT",
+        "typology_name": "Rapid Movement / Structuring",
+        "severity": 0.45,
+        "explanation": "Intermittent wire transfer. Target node: 80235B770."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714450: Account 80211A900 transferred $3,800.00 US Dollar to 80235B770 on 2022/09/09 18:49. Priority tier: Medium (Rank #39) driven by 58.7% statistical risk score and intermittent wire transfer.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714520",
+    "timestamp": "2022/09/09 18:51",
+    "sender_account": "80218B010",
+    "receiver_account": "80248C880",
+    "amount": 2500.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.554,
+    "risk_rank": 40,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.554,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      },
+      {
+        "signal_name": "Graph Pattern: Fan-Out Disbursement",
+        "source": "GRAPH",
+        "strength": "HIGH",
+        "measured_value": "Severity 0.4",
+        "baseline_comparison": "Acyclic standard transaction baseline"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_OUT",
+        "typology_name": "Fan-Out Disbursement",
+        "severity": 0.4,
+        "explanation": "Dispersal to small merchant pool. Target node: 80248C880."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714520: Account 80218B010 transferred $2,500.00 US Dollar to 80248C880 on 2022/09/09 18:51. Priority tier: Medium (Rank #40) driven by 55.4% statistical risk score and dispersal to small merchant pool.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 1,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714600",
+    "timestamp": "2022/09/09 18:52",
+    "sender_account": "80225C120",
+    "receiver_account": "80248C880",
+    "amount": 2700.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.521,
+    "risk_rank": 41,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.521,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_OUT",
+        "typology_name": "Fan-Out Disbursement",
+        "severity": 0.4,
+        "explanation": "Routine multi-party payment. Target node: 80248C880."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714600: Account 80225C120 transferred $2,700.00 US Dollar to 80248C880 on 2022/09/09 18:52. Priority tier: Medium (Rank #41) driven by 52.1% statistical risk score and routine multi-party payment.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714680",
+    "timestamp": "2022/09/09 18:54",
+    "sender_account": "80232D230",
+    "receiver_account": "80259D990",
+    "amount": 4800.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.493,
+    "risk_rank": 42,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.493,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      },
+      {
+        "signal_name": "Regulatory Threshold Proximity Rule",
+        "source": "RULE",
+        "strength": "HIGH",
+        "measured_value": "$4,800.00 near $10k reporting limit",
+        "baseline_comparison": "BSA CTR threshold at $10,000"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "HIGH_VALUE",
+        "typology_name": "High-Value Anomaly",
+        "severity": 0.4,
+        "explanation": "Slightly elevated debit amount. Target node: 80259D990."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714680: Account 80232D230 transferred $4,800.00 US Dollar to 80259D990 on 2022/09/09 18:54. Priority tier: Medium (Rank #42) driven by 49.3% statistical risk score and slightly elevated debit amount.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 1
+    }
+  },
+  {
+    "transaction_id": "TX_4714750",
+    "timestamp": "2022/09/09 18:55",
+    "sender_account": "80239E340",
+    "receiver_account": "80259D990",
+    "amount": 3900.0,
+    "currency": "US Dollar",
+    "payment_format": "Wire",
+    "model_risk_score": 0.468,
+    "risk_rank": 43,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.468,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "HIGH_VALUE",
+        "typology_name": "High-Value Anomaly",
+        "severity": 0.35,
+        "explanation": "Occasional business invoice payment. Target node: 80259D990."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714750: Account 80239E340 transferred $3,900.00 US Dollar to 80259D990 on 2022/09/09 18:55. Priority tier: Medium (Rank #43) driven by 46.8% statistical risk score and occasional business invoice payment.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714820",
+    "timestamp": "2022/09/09 18:57",
+    "sender_account": "80246F450",
+    "receiver_account": "80268E010",
+    "amount": 2200.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.441,
+    "risk_rank": 44,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.441,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.35,
+        "explanation": "Minor inward volume increase. Target node: 80268E010."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714820: Account 80246F450 transferred $2,200.00 US Dollar to 80268E010 on 2022/09/09 18:57. Priority tier: Medium (Rank #44) driven by 44.1% statistical risk score and minor inward volume increase.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714900",
+    "timestamp": "2022/09/09 18:58",
+    "sender_account": "80253A560",
+    "receiver_account": "80268E010",
+    "amount": 2100.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.415,
+    "risk_rank": 45,
+    "risk_tier": "Medium",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "MEDIUM",
+        "measured_value": 0.415,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [
+      {
+        "typology": "FAN_IN",
+        "typology_name": "Fan-In Aggregation (Mule Funnel)",
+        "severity": 0.3,
+        "explanation": "Routine peer transfer flow. Target node: 80268E010."
+      }
+    ],
+    "human_readable_summary": "Alert for transaction TX_4714900: Account 80253A560 transferred $2,100.00 US Dollar to 80268E010 on 2022/09/09 18:58. Priority tier: Medium (Rank #45) driven by 41.5% statistical risk score and routine peer transfer flow.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4714980",
+    "timestamp": "2022/09/09 19:00",
+    "sender_account": "80260B670",
+    "receiver_account": "80279F120",
+    "amount": 850.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.362,
+    "risk_rank": 46,
+    "risk_tier": "Low",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "LOW",
+        "measured_value": 0.362,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [],
+    "human_readable_summary": "Alert for transaction TX_4714980: Account 80260B670 transferred $850.00 US Dollar to 80279F120 on 2022/09/09 19:00. Priority tier: Low (Rank #46) driven by 36.2% statistical risk score and standard peer payment.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4715050",
+    "timestamp": "2022/09/09 19:02",
+    "sender_account": "80267C780",
+    "receiver_account": "80279F120",
+    "amount": 620.0,
+    "currency": "US Dollar",
+    "payment_format": "ACH",
+    "model_risk_score": 0.285,
+    "risk_rank": 47,
+    "risk_tier": "Low",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "LOW",
+        "measured_value": 0.285,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [],
+    "human_readable_summary": "Alert for transaction TX_4715050: Account 80267C780 transferred $620.00 US Dollar to 80279F120 on 2022/09/09 19:02. Priority tier: Low (Rank #47) driven by 28.5% statistical risk score and regular grocery purchase.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4715120",
+    "timestamp": "2022/09/09 19:03",
+    "sender_account": "80274D890",
+    "receiver_account": "80289A230",
+    "amount": 1150.0,
+    "currency": "US Dollar",
+    "payment_format": "Credit Card",
+    "model_risk_score": 0.21,
+    "risk_rank": 48,
+    "risk_tier": "Low",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "LOW",
+        "measured_value": 0.21,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [],
+    "human_readable_summary": "Alert for transaction TX_4715120: Account 80274D890 transferred $1,150.00 US Dollar to 80289A230 on 2022/09/09 19:03. Priority tier: Low (Rank #48) driven by 21.0% statistical risk score and utility bill payment.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4715200",
+    "timestamp": "2022/09/09 19:05",
+    "sender_account": "80281E900",
+    "receiver_account": "80289A230",
+    "amount": 450.0,
+    "currency": "US Dollar",
+    "payment_format": "Debit Card",
+    "model_risk_score": 0.145,
+    "risk_rank": 49,
+    "risk_tier": "Low",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "LOW",
+        "measured_value": 0.145,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [],
+    "human_readable_summary": "Alert for transaction TX_4715200: Account 80281E900 transferred $450.00 US Dollar to 80289A230 on 2022/09/09 19:05. Priority tier: Low (Rank #49) driven by 14.5% statistical risk score and recurring streaming subscription.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  },
+  {
+    "transaction_id": "TX_4715280",
+    "timestamp": "2022/09/09 19:06",
+    "sender_account": "80288F010",
+    "receiver_account": "80299B340",
+    "amount": 320.0,
+    "currency": "US Dollar",
+    "payment_format": "Debit Card",
+    "model_risk_score": 0.082,
+    "risk_rank": 50,
+    "risk_tier": "Low",
+    "contributing_signals": [
+      {
+        "signal_name": "Statistical Risk Probability",
+        "source": "MODEL",
+        "strength": "LOW",
+        "measured_value": 0.082,
+        "baseline_comparison": "Operational tier threshold >= 0.4"
+      }
+    ],
+    "graph_patterns": [],
+    "human_readable_summary": "Alert for transaction TX_4715280: Account 80288F010 transferred $320.00 US Dollar to 80299B340 on 2022/09/09 19:06. Priority tier: Low (Rank #50) driven by 8.2% statistical risk score and coffee shop purchase.",
+    "provenance_breakdown": {
+      "model_signals_count": 1,
+      "behavioral_signals_count": 0,
+      "graph_signals_count": 0,
+      "rule_signals_count": 0
+    }
+  }
+]
