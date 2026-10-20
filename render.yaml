@@ -23,10 +23,7 @@ services:
       - key: SUPABASE_KEY
         sync: false
       - key: FRONTEND_URL
-        fromService:
-          type: web
-          name: finguard-ai-web
-          property: url
+        sync: false
       - key: CORS_ORIGINS
         sync: false
       - key: FINGUARD_REPORTS_DIR
@@ -47,7 +44,4 @@ services:
         destination: /index.html
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: finguard-ai-api
-          property: url
+        sync: false
