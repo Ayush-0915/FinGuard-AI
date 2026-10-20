@@ -25,7 +25,9 @@ test_files = [
     # IBM Export Hybrid Pipeline
     os.path.join(ROOT_DIR, "evaluation", "amlsim_evaluation", "ibm_export", "tests", "test_ibm_export.py"),
     # IBM API & UI Integration (Phase D Gate 3)
-    os.path.join(ROOT_DIR, "evaluation", "amlsim_evaluation", "ibm_export", "tests", "test_ibm_api_and_ui.py")
+    os.path.join(ROOT_DIR, "evaluation", "amlsim_evaluation", "ibm_export", "tests", "test_ibm_api_and_ui.py"),
+    # Model Intelligence & Performance Dashboard
+    os.path.join(ROOT_DIR, "evaluation", "amlsim_evaluation", "phase4", "test_model_intelligence.py")
 ]
 
 suite = unittest.TestSuite()

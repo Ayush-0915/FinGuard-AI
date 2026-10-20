@@ -15,6 +15,11 @@ from typing import Optional, List, Dict, Any
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 
+try:
+    from backend.model_intelligence_service import get_model_intelligence_data
+except ImportError:
+    from model_intelligence_service import get_model_intelligence_data
+
 router = APIRouter(prefix="/api/v2", tags=["Phase 4 Intelligence"])
 
 # Determine artifacts base directory
@@ -326,3 +331,17 @@ def get_case_detail(case_id: str):
             }
 
     raise HTTPException(status_code=404, detail=f"Case with ID '{case_id}' not found.")
+
+
+@router.get("/model/intelligence")
+def get_model_intelligence():
+    """
+    Returns verified model intelligence metadata, architecture specs,
+    offline performance benchmarks, 26-feature importance ranking,
+    risk fusion formulas, and alert-budget capacity tradeoffs.
+    """
+    try:
+        data = get_model_intelligence_data()
+        return data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to generate model intelligence: {e}")

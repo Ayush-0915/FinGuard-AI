@@ -1,0 +1,53 @@
+# ==============================================================================
+# FinGuard AI — Render Infrastructure as Code Blueprint (render.yaml)
+# Orchestrates Python FastAPI Backend and React+Vite Static Site on Render
+# ==============================================================================
+
+services:
+  # ----------------------------------------------------------------------------
+  # 1. FinGuard AI Backend API (Python Web Service)
+  # ----------------------------------------------------------------------------
+  - type: web
+    name: finguard-ai-api
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements-server.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: FRONTEND_URL
+        fromService:
+          type: web
+          name: finguard-ai-web
+          property: url
+      - key: CORS_ORIGINS
+        sync: false
+      - key: FINGUARD_REPORTS_DIR
+        value: /tmp/finguard-reports
+
+  # ----------------------------------------------------------------------------
+  # 2. FinGuard AI Web App (React + TypeScript + Vite Static Site)
+  # ----------------------------------------------------------------------------
+  - type: web
+    name: finguard-ai-web
+    runtime: static
+    rootDir: web
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: finguard-ai-api
+          property: url

@@ -1,0 +1,35 @@
+# ==============================================================================
+# FinGuard AI — Production Backend Server Requirements (Render Deployment)
+# Excludes desktop GUI frameworks (PySide6) and interactive notebook tools (Jupyter)
+# ==============================================================================
+
+# Core Data Processing
+pandas==2.2.3
+numpy==2.1.3
+
+# Machine Learning & Imbalance Handling
+scikit-learn==1.6.1
+imbalanced-learn==0.13.0
+lightgbm==4.5.0
+
+# Graph / Network Topology Analysis
+networkx==3.4.2
+
+# Explainable AI (TreeSHAP)
+shap==0.46.0
+
+# Model Serialization & Environment
+joblib==1.4.2
+python-dotenv==1.0.1
+requests>=2.31.0
+
+# PDF Report Generation
+reportlab>=4.2.0
+
+# Backend FastAPI Web Framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# Cloud Database & Authentication
+supabase==2.11.0

@@ -90,6 +90,39 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 
 app = FastAPI(title="FinGuard AI API", description="AI-Powered Financial Crime Detection and Risk Intelligence", version="1.0.0")
 
+from fastapi.middleware.cors import CORSMiddleware
+
+# ---------------------------------------------------------
+# CORS SECURITY CONFIGURATION
+# Configured via environment variables for Render production frontend origin.
+# Strictly no wildcard with credentials allowed.
+# ---------------------------------------------------------
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
+CORS_ORIGINS = os.getenv("CORS_ORIGINS", "")
+
+allowed_origins = [FRONTEND_URL.strip()]
+if CORS_ORIGINS:
+    for origin in CORS_ORIGINS.split(","):
+        o = origin.strip()
+        if o and o not in allowed_origins:
+            allowed_origins.append(o)
+
+# Safe default origins for local development
+for local_origin in ["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3000"]:
+    if local_origin not in allowed_origins:
+        allowed_origins.append(local_origin)
+
+# Enforce strict policy: reject wildcard '*' from credentialed CORS
+allowed_origins = [o for o in allowed_origins if o != "*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["*"],
+)
+
 # Mount Phase 4 Intelligence API Router (Alert Prioritization, Grounded Explanations, Graph Intelligence, Cases)
 try:
     from phase4_router import router as phase4_router
