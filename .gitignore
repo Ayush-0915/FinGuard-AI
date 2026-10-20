@@ -118,3 +118,18 @@ reports/*.pdf
 
 # Node / Web dependencies
 node_modules/
+
+# Local build output and video-production artifacts
+*.tsbuildinfo
+.hyperframes/
+**/.hyperframes/
+**/render-outputs/
+**/video-state.json
+*.webm
+*.mov
+*.mkv
+*.avi
+*.m4v
+assets/videos/*
+!assets/videos/
+!assets/videos/finguard-ai-launch.mp4
