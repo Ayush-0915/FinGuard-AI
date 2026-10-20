@@ -883,7 +883,7 @@ class ApiClient:
                     "source_sha256": run.get("source_sha256", "b19d39f515523373f991b689c07e11e7b0b95c17a2c27a87d91584ae16c5b040"),
                     "total_scanned_rows": run.get("total_scanned_rows", 5078345),
                     "selected_records_count": run.get("selected_records_count", 1000),
-                    "model_version": run.get("model_version", "LightGBM-4.5.0-muleguard"),
+                    "model_version": run.get("model_version", "LightGBM-4.5.0-FinGuard-AI"),
                     "pipeline_version": run.get("pipeline_version", "1.0.0-hybrid"),
                     "selection_policy": run.get("selection_policy", "Top-500 Alerts + 250 Graph Counterparties + 250 Baseline Samples"),
                     "tier_distribution": tier_counts
@@ -981,7 +981,7 @@ class ApiClient:
                         "risk_tier": s.get("risk_tier", "Low"),
                         "fused_score": s.get("fused_score", s.get("model_risk_score", 0.0)),
                         "anomaly_score": s.get("anomaly_score", 0.0),
-                        "model_version": s.get("model_version", "LightGBM-4.5.0-muleguard")
+                        "model_version": s.get("model_version", "LightGBM-4.5.0-FinGuard-AI")
                     })
                 return {
                     "status": "success",

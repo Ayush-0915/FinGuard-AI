@@ -3,7 +3,7 @@
 **Document:** Operational Runbook & Command Reference  
 **Path:** `evaluation/amlsim_evaluation/ibm_export/IBM_INTEGRATION_RUNBOOK.md`  
 **Pipeline Version:** 1.0.0-hybrid  
-**Model Version:** LightGBM-4.5.0-muleguard (Frozen)  
+**Model Version:** LightGBM-4.5.0-FinGuard-AI (Frozen)
 
 ---
 

@@ -42,7 +42,7 @@ class ExportConfig:
     
     # Provenance
     pipeline_version: str = "1.0.0-hybrid"
-    model_version: str = "LightGBM-4.5.0-muleguard"
+    model_version: str = "LightGBM-4.5.0-FinGuard-AI"
     
     # Invariant Feature Names in Contract Order
     feature_columns: List[str] = field(default_factory=lambda: [

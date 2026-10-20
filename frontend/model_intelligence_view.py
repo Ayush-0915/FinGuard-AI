@@ -380,7 +380,7 @@ class ModelIntelligenceView(QWidget):
         lbl_sep_desc = QLabel(
             "1. Full 5M IBM AML Benchmark (5,078,345 records, 5,177 illicit): Strict offline training & test evaluation partition. Never loaded into memory on desktop requests.\n"
             "2. 1,000-Row Showcase Benchmark (1,000 records, 500 prioritized alerts + 250 graph counterparties + 250 random baseline): Published to Supabase for desktop interactive exploration.\n"
-            "3. 500-Row Core Synthetic Demo Dataset (500 records, 102 accounts, 25 alerts): MuleGuard internal synthetic simulation used for standard offline showcase demonstrations."
+            "3. 500-Row Core Synthetic Demo Dataset (500 records, 102 accounts, 25 alerts): FinGuard AI internal synthetic simulation used for standard offline showcase demonstrations."
         )
         lbl_sep_desc.setWordWrap(True)
         lbl_sep_desc.setStyleSheet("font-size: 11px; color: #7A2E0E; line-height: 1.4;")

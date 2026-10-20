@@ -387,7 +387,7 @@ def get_benchmark_alerts(
                         "risk_tier": row.get("risk_tier", "Low"),
                         "fused_score": row.get("fused_score", row.get("model_risk_score", 0.0)),
                         "anomaly_score": row.get("anomaly_score", 0.0),
-                        "model_version": row.get("model_version", "LightGBM-4.5.0-muleguard")
+                        "model_version": row.get("model_version", "LightGBM-4.5.0-FinGuard-AI")
                     })
                 total_available = len(alerts)
         except Exception:
@@ -427,7 +427,7 @@ def get_benchmark_alerts(
                 "risk_tier": s.get("risk_tier", "Low"),
                 "fused_score": s.get("fused_score", s.get("model_risk_score", 0.0)),
                 "anomaly_score": s.get("anomaly_score", 0.0),
-                "model_version": s.get("model_version", "LightGBM-4.5.0-muleguard")
+                "model_version": s.get("model_version", "LightGBM-4.5.0-FinGuard-AI")
             })
 
     sanitized = [_sanitize_record(a) for a in alerts]

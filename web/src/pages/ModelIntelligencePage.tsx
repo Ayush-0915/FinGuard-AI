@@ -259,7 +259,7 @@ export const ModelIntelligencePage: React.FC = () => {
             <p style={{ fontSize: '12px', color: '#7a2e0e', lineHeight: 1.5 }}>
               <b>1. Full 5M IBM AML Benchmark (5,078,345 records, 5,177 illicit):</b> Strict offline training & test evaluation partition. Never loaded into memory on web requests.<br />
               <b>2. 1,000-Row Showcase Benchmark:</b> Published to Supabase for interactive exploration without evaluation label exposure.<br />
-              <b>3. 500-Row Core Synthetic Demo Dataset:</b> MuleGuard internal simulation used for live mock account investigations.
+              <b>3. 500-Row Core Synthetic Demo Dataset:</b> FinGuard AI internal simulation used for live mock account investigations.
             </p>
           </div>
         </div>

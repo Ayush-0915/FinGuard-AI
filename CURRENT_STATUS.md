@@ -12,7 +12,7 @@
 | :--- | :--- |
 | **Audit Date** | October 19, 2026 |
 | **Workspace Path** | `c:\Users\ayush\Desktop\Private\MuleGuard` |
-| **Source Repository** | [https://github.com/Afsar426/MuleGuard](https://github.com/Afsar426/MuleGuard) |
+| **Source Repository** | [https://github.com/Ayush-0915/Private-Project](https://github.com/Ayush-0915/Private-Project) |
 | **Destination Repository** | [https://github.com/Ayush-0915/Private-Project](https://github.com/Ayush-0915/Private-Project) |
 | **Active Branch** | `main` |
 | **Head Commit Hash** | `a1b9446d25973efa1aae642784fcca4970e771a0` (Author: Ayush Singh) |
@@ -25,7 +25,7 @@
 
 ## 2. Executive Summary
 
-**FinGuard AI** (originally known as *MuleGuard*) is an intelligent financial crime intelligence and money mule detection platform. It is architected as a hybrid desktop-and-cloud system combining a **PySide6 (Qt6)** desktop analyst terminal, a **FastAPI** REST and WebSocket backend, pre-trained supervised and unsupervised machine learning models (**LightGBM** and **Isolation Forest**), an explainable AI layer (**SHAP**), and a **Supabase (PostgreSQL)** database.
+**FinGuard AI** is an intelligent financial crime intelligence and money mule detection platform. It is architected as a hybrid desktop-and-cloud system combining a **PySide6 (Qt6)** desktop analyst terminal, a **FastAPI** REST and WebSocket backend, pre-trained supervised and unsupervised machine learning models (**LightGBM** and **Isolation Forest**), an explainable AI layer (**SHAP**), and a **Supabase (PostgreSQL)** database.
 
 ### Overall System Health & Maturity
 - **Frontend (PySide6 Terminal):** Highly developed visual interface spanning 4,992 lines in `frontend/app.py`. Features 10 distinct views, Matplotlib visualization canvases, NetworkX counterparty graph rendering, and custom simulation engines. Crucially, the frontend possesses a resilient dual-mode architecture: if the backend or Supabase database is unreachable, it automatically falls back to an extensive in-memory local mock sandbox (`self.local_mode = True`), enabling offline demonstration and testing.

@@ -398,7 +398,7 @@ def get_model_intelligence_data() -> Dict[str, Any]:
     return {
         "status": "success",
         "production_model": {
-            "model_name": "MuleGuard LightGBM Production Classifier",
+            "model_name": "FinGuard AI LightGBM Production Classifier",
             "model_file": "models/muleguard_lightgbm.pkl",
             "algorithm": "Gradient Boosted Decision Trees (LightGBM 4.5.0)",
             "num_features": 26,
@@ -420,7 +420,7 @@ def get_model_intelligence_data() -> Dict[str, Any]:
             "role": "Real-time Transaction Inference & Statistical Scoring"
         },
         "secondary_model": {
-            "model_name": "MuleGuard Isolation Forest Anomaly Detector",
+            "model_name": "FinGuard AI Isolation Forest Anomaly Detector",
             "model_file": "models/muleguard_isolation_forest.pkl",
             "algorithm": "Isolation Forest (scikit-learn 1.6.1)",
             "n_estimators": iso_cfg.get("n_estimators", 300),
