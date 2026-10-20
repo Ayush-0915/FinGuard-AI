@@ -1,12 +1,12 @@
-# 🛡️ MuleGuard: AI-Powered Financial Crime & Mule Account Intelligence Terminal
+# 🛡️ FinGuard Ai: AI-Powered Financial Crime & Mule Account Intelligence Terminal
 
-MuleGuard is an enterprise-grade financial intelligence terminal designed to identify, analyze, and investigate mule accounts and suspicious transaction routing in real-time. By combining a PySide6 desktop UI client with a FastAPI backend server, a Supabase live database, and machine learning classifiers (LightGBM and Isolation Forest), the terminal transforms raw transaction data into explainable risk predictions.
+FinGuard Ai is an enterprise-grade financial intelligence terminal designed to identify, analyze, and investigate mule accounts and suspicious transaction routing in real-time. By combining a PySide6 desktop UI client with a FastAPI backend server, a Supabase live database, and machine learning classifiers (LightGBM and Isolation Forest), the terminal transforms raw transaction data into explainable risk predictions.
 
 ---
 
 ## 📐 System Data Flow
 
-The following architecture diagram represents the lifecycle of a transaction within MuleGuard:
+The following architecture diagram represents the lifecycle of a transaction within FinGuard Ai:
 ```mermaid
 flowchart TD
     subgraph Client ["Desktop UI Client (PySide6)"]
@@ -49,7 +49,7 @@ flowchart TD
 
 ### 🔄 Transaction Intelligence Lifecycle
 
-MuleGuard processes a transaction through a multi-stage intelligence pipeline:
+FinGuard Ai processes a transaction through a multi-stage intelligence pipeline:
 
 ```text
 Transaction Submitted
@@ -101,7 +101,7 @@ Feature Engineering
 ---
 ## 🖥️ Application Screenshots
 
-MuleGuard provides a comprehensive financial intelligence interface for
+FinGuard Ai provides a comprehensive financial intelligence interface for
 monitoring transactions, identifying suspicious accounts, investigating
 fraud alerts, and analyzing fraud patterns.
 
@@ -136,7 +136,7 @@ fraud alerts, and analyzing fraud patterns.
 </p>
 ## 🧠 Machine Learning & Feature Engineering
 
-MuleGuard does not rely on simple static rules. Instead, it uses a dynamic feature extraction pipeline to feed machine learning models:
+FinGuard Ai does not rely on simple static rules. Instead, it uses a dynamic feature extraction pipeline to feed machine learning models:
 
 ### 1. Feature Engineering (`FeaturePipeline`)
 
@@ -171,7 +171,7 @@ The pipeline constructs high-dimensional features from a transaction and its his
 
 ## 🎯 Multi-Signal Risk Intelligence
 
-MuleGuard combines multiple intelligence signals instead of relying exclusively on one model:
+FinGuard Ai combines multiple intelligence signals instead of relying exclusively on one model:
 
 ```text
                      Transaction
@@ -208,7 +208,7 @@ MuleGuard combines multiple intelligence signals instead of relying exclusively 
                  Investigation View
 ```
 
-This architecture allows MuleGuard to distinguish between:
+This architecture allows FinGuard Ai to distinguish between:
 
 - High-probability mule behavior
 - Unusual but potentially legitimate activity
@@ -241,7 +241,7 @@ For demonstration purposes, the **Fraud Analytics** and **Payment Methods** view
 
 ## 🕸️ Transaction Network Intelligence
 
-MuleGuard uses NetworkX-based graph analysis to represent transaction relationships between counterparties.
+FinGuard Ai uses NetworkX-based graph analysis to represent transaction relationships between counterparties.
 
 ```text
               Account A
@@ -275,7 +275,7 @@ The network view can help investigators understand:
 
 ## 📊 Risk Classification
 
-MuleGuard converts model output into an operational risk score:
+FinGuard Ai converts model output into an operational risk score:
 
 ```text
 Risk Score
@@ -306,7 +306,7 @@ The risk classification is intended to support analyst prioritization and invest
 
 ## 🔬 Explainable AI Investigation
 
-MuleGuard does not only produce a risk score.
+FinGuard Ai does not only produce a risk score.
 
 It also provides an explanation layer using SHAP.
 
@@ -415,14 +415,14 @@ Define the variable in your shell session before starting the application.
 #### macOS / Linux
 
 ```bash
-export MULEGUARD_API_URL="https://muleguard-i6ol.onrender.com"
+export FINGUARD_API_URL="https://muleguard-i6ol.onrender.com"
 ./dist/app
 ```
 
 #### Windows
 
 ```cmd
-set MULEGUARD_API_URL=https://muleguard-i6ol.onrender.com
+set FINGUARD_API_URL=https://muleguard-i6ol.onrender.com
 dist\app.exe
 ```
 
@@ -435,13 +435,13 @@ dist\app.exe
 
 # 🐳 Docker Deployment
 
-MuleGuard is also containerized using **Docker** to provide a consistent, portable, and reproducible runtime for the backend service.
+FinGuard Ai is also containerized using **Docker** to provide a consistent, portable, and reproducible runtime for the backend service.
 
 Docker packages the FastAPI application, Python runtime, required dependencies, feature pipeline, and machine-learning inference environment into a deployable container image.
 
 ## 🏗️ Docker Architecture
 
-The Docker deployment adds a containerization layer around the existing MuleGuard backend architecture:
+The Docker deployment adds a containerization layer around the existing FinGuard Ai backend architecture:
 
 ```mermaid
 flowchart TD
@@ -470,7 +470,7 @@ flowchart TD
 
 ### 🔧 What Docker Contains
 
-The MuleGuard backend container contains:
+The FinGuard Ai backend container contains:
 
 - FastAPI application
 - Uvicorn ASGI server
@@ -493,7 +493,7 @@ The PySide6 desktop client remains a separate application and communicates with 
 The Docker deployment uses the following components:
 
 ```text
-MuleGuard/
+FinGuard Ai/
 │
 ├── backend/
 │   ├── main.py
@@ -520,7 +520,7 @@ The Dockerfile defines:
 1. Base Python runtime
 2. Working directory
 3. Python dependencies
-4. MuleGuard source files
+4. FinGuard Ai source files
 5. ML model files
 6. Backend startup command
 7. Exposed application port
@@ -544,7 +544,7 @@ EXPOSE 8000
 CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-> **Note:** Keep the Dockerfile aligned with the Python version and dependency versions actually used by your MuleGuard environment.
+> **Note:** Keep the Dockerfile aligned with the Python version and dependency versions actually used by your FinGuard Ai environment.
 
 ---
 
@@ -586,7 +586,7 @@ Sensitive files such as `.env` should not be copied into the Docker image.
 
 ## 🔐 Environment Configuration
 
-MuleGuard uses environment variables for sensitive configuration such as database credentials.
+FinGuard Ai uses environment variables for sensitive configuration such as database credentials.
 
 Example `.env`:
 
@@ -614,7 +614,7 @@ SUPABASE_KEY=
 
 ## 🐳 Build the Docker Image
 
-From the root of the MuleGuard repository:
+From the root of the FinGuard Ai repository:
 
 ```bash
 docker build -t muleguard-backend .
@@ -638,7 +638,7 @@ Copy Backend
 Copy ML Models
     │
     ▼
-Create MuleGuard Image
+Create FinGuard Ai Image
 ```
 
 Verify that the image exists:
@@ -656,7 +656,7 @@ muleguard-backend   latest    xxxxxxxxxxxx   ...
 
 ---
 
-## ▶️ Run MuleGuard with Docker
+## ▶️ Run FinGuard Ai with Docker
 
 Start the backend container:
 
@@ -748,7 +748,7 @@ A successful response confirms that the containerized backend is running and rea
 
 ## 🔗 Connect PySide6 Client to Docker Backend
 
-When the PySide6 desktop application and MuleGuard Docker backend are running on the same machine, configure the client to use:
+When the PySide6 desktop application and FinGuard Ai Docker backend are running on the same machine, configure the client to use:
 
 ```json
 {
@@ -761,14 +761,14 @@ When the PySide6 desktop application and MuleGuard Docker backend are running on
 #### macOS / Linux
 
 ```bash
-export MULEGUARD_API_URL="http://127.0.0.1:8000"
+export FINGUARD_API_URL="http://127.0.0.1:8000"
 ./dist/app
 ```
 
 #### Windows
 
 ```cmd
-set MULEGUARD_API_URL=http://127.0.0.1:8000
+set FINGUARD_API_URL=http://127.0.0.1:8000
 dist\app.exe
 ```
 
@@ -846,7 +846,7 @@ The same Docker image can be used as the backend deployment artifact for a cloud
 The deployment lifecycle is:
 
 ```text
-                 MuleGuard Repository
+                 FinGuard Ai Repository
                          │
                          ▼
                    Dockerfile
@@ -862,7 +862,7 @@ The deployment lifecycle is:
               Cloud Container Host
                          │
                          ▼
-                MuleGuard FastAPI
+                FinGuard Ai FastAPI
                          │
           ┌──────────────┼──────────────┐
           ▼              ▼              ▼
@@ -887,7 +887,7 @@ This approach provides:
 
 ## 🔐 Docker Security Considerations
 
-MuleGuard handles financial transaction intelligence, so deployment security is important.
+FinGuard Ai handles financial transaction intelligence, so deployment security is important.
 
 ### Never commit secrets
 
@@ -927,7 +927,7 @@ The serialized ML models should be treated as application assets and should not 
 
 ## 🛑 Stop Docker Container
 
-Stop MuleGuard:
+Stop FinGuard Ai:
 
 ```bash
 docker stop muleguard-backend
@@ -972,9 +972,9 @@ docker system prune
 
 ---
 
-## 🔀 MuleGuard Deployment Modes
+## 🔀 FinGuard Ai Deployment Modes
 
-MuleGuard supports multiple deployment configurations:
+FinGuard Ai supports multiple deployment configurations:
 
 ### 1. Local Source Deployment
 
@@ -1079,7 +1079,7 @@ python frontend/app.py
 
 ---
 
-## 🧩 Running MuleGuard Using Docker
+## 🧩 Running FinGuard Ai Using Docker
 
 Instead of running FastAPI directly through the Python environment, the backend can be started through Docker:
 
@@ -1138,7 +1138,7 @@ The final local setup becomes:
 
 ## 📌 Important Architecture Note
 
-Docker does **not replace the MuleGuard transaction intelligence architecture**.
+Docker does **not replace the FinGuard Ai transaction intelligence architecture**.
 
 It provides the deployment and runtime layer around the existing FastAPI backend.
 
@@ -1170,11 +1170,11 @@ Docker simply packages the backend environment so that this pipeline can be exec
 
 ---
 
-## 🛡️ MuleGuard at a Glance
+## 🛡️ FinGuard Ai at a Glance
 
 ```text
 ┌───────────────────────────────────────────────────────────┐
-│                        MULEGUARD                          │
+│                        FinGuard Ai                          │
 │       AI-Powered Financial Crime Intelligence Terminal    │
 ├───────────────────────────────────────────────────────────┤
 │                                                           │
@@ -1228,9 +1228,9 @@ Docker simply packages the backend environment so that this pipeline can be exec
 
 ---
 
-## 🏁 MuleGuard Deployment Summary
+## 🏁 FinGuard Ai Deployment Summary
 
-MuleGuard provides a complete end-to-end financial intelligence environment:
+FinGuard Ai provides a complete end-to-end financial intelligence environment:
 
 ```text
                     TRANSACTION
@@ -1268,4 +1268,4 @@ MuleGuard provides a complete end-to-end financial intelligence environment:
         ANALYST INVESTIGATION
 ```
 
-MuleGuard combines **machine learning, anomaly detection, explainable AI, graph-based transaction intelligence, real-time streaming, cloud persistence, desktop investigation tooling, and Docker-based deployment** into a unified financial-crime intelligence terminal.
+FinGuard Ai combines **machine learning, anomaly detection, explainable AI, graph-based transaction intelligence, real-time streaming, cloud persistence, desktop investigation tooling, and Docker-based deployment** into a unified financial-crime intelligence terminal.
